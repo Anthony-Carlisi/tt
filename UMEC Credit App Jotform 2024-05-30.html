@@ -1,0 +1,2289 @@
+<!--[if lt IE 9]>
+<script src="https://cdn03.jotfor.ms/js/vendor/flashcanvas.js?v=3.3.52358" type="text/javascript"></script>
+<![endif]-->
+<script src="https://cdn01.jotfor.ms/js/vendor/jquery-3.7.1.min.js?v=3.3.52358" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/js/vendor/jSignature/jSignature.js?v=3.3.52358" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/vendor/jSignature/jSignature.CompressorBase30.js?v=3.3.52358"
+  type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/js/vendor/jSignature/jSignature.CompressorSVG.js?v=3.3.52358"
+  type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/js/vendor/jSignature/jSignature.UndoButton.js?v=3.3.52358"
+  type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/vendor/jotform.signaturepad.new.js?v=3.3.52358" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/static/prototype.forms.js?v=3.3.52358" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/static/jotform.forms.js?v=3.3.52358" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/vendor/maskedinput_5.0.9.min.js?v=3.3.52358" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/js/vendor/imageinfo.js?v=3.3.52358" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/file-uploader/fileuploader.js?v=3.3.52358" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/punycode-1.4.1.min.js?v=3.3.52358" type="text/javascript" defer></script>
+<script src="https://cdn01.jotfor.ms/s/umd/a726b9e1841/for-widgets-server.js?v=3.3.52358"
+  type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/js/vendor/math-processor.js?v=3.3.52358" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/s/umd/a726b9e1841/for-pdfimporter-patch.js?v=3.3.52358"
+  type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/js/vendor/smoothscroll.min.js?v=3.3.52358" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/errorNavigation.js?v=3.3.52358" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true; JotForm.extendsNewTheme = false; JotForm.singleProduct = false; JotForm.newPaymentUIForNewCreatedForms = false; JotForm.texts = { "confirmEmail": "E-mail does not match", "pleaseWait": "Please wait...", "validateEmail": "You need to validate this e-mail", "confirmClearForm": "Are you sure you want to clear the form", "lessThan": "Your score should be less than or equal to", "incompleteFields": "There are incomplete required fields. Please complete them.", "required": "This field is required.", "requireOne": "At least one field required.", "requireEveryRow": "Every row is required.", "requireEveryCell": "Every cell is required.", "email": "Enter a valid e-mail address", "alphabetic": "This field can only contain letters", "numeric": "This field can only contain numeric values", "alphanumeric": "This field can only contain letters and numbers.", "cyrillic": "This field can only contain cyrillic characters", "url": "This field can only contain a valid URL", "currency": "This field can only contain currency values.", "fillMask": "Field value must fill mask.", "uploadExtensions": "You can only upload following files:", "noUploadExtensions": "File has no extension file type (e.g. .txt, .png, .jpeg)", "uploadFilesize": "File size cannot be bigger than:", "uploadFilesizemin": "File size cannot be smaller than:", "gradingScoreError": "Score total should only be less than or equal to", "inputCarretErrorA": "Input should not be less than the minimum value:", "inputCarretErrorB": "Input should not be greater than the maximum value:", "maxDigitsError": "The maximum digits allowed is", "minCharactersError": "The number of characters should not be less than the minimum value:", "maxCharactersError": "The number of characters should not be more than the maximum value:", "freeEmailError": "Free email accounts are not allowed", "minSelectionsError": "The minimum required number of selections is ", "maxSelectionsError": "The maximum number of selections allowed is ", "pastDatesDisallowed": "Date must not be in the past.", "dateLimited": "This date is unavailable.", "dateInvalid": "This date is not valid. The date format is {format}", "dateInvalidSeparate": "This date is not valid. Enter a valid {element}.", "ageVerificationError": "You must be older than {minAge} years old to submit this form.", "multipleFileUploads_typeError": "{file} has invalid extension. Only {extensions} are allowed.", "multipleFileUploads_sizeError": "{file} is too large, maximum file size is {sizeLimit}.", "multipleFileUploads_minSizeError": "{file} is too small, minimum file size is {minSizeLimit}.", "multipleFileUploads_emptyError": "{file} is empty, please select files again without it.", "multipleFileUploads_uploadFailed": "File upload failed, please remove it and upload the file again.", "multipleFileUploads_onLeave": "The files are being uploaded, if you leave now the upload will be cancelled.", "multipleFileUploads_fileLimitError": "Only {fileLimit} file uploads allowed.", "dragAndDropFilesHere_infoMessage": "Drag and drop files here", "chooseAFile_infoMessage": "Choose a file", "maxFileSize_infoMessage": "Max. file size", "generalError": "There are errors on the form. Please fix them before continuing.", "generalPageError": "There are errors on this page. Please fix them before continuing.", "wordLimitError": "Too many words. The limit is", "wordMinLimitError": "Too few words. The minimum is", "characterLimitError": "Too many Characters. The limit is", "characterMinLimitError": "Too few characters. The minimum is", "ccInvalidNumber": "Credit Card Number is invalid.", "ccInvalidCVC": "CVC number is invalid.", "ccInvalidExpireDate": "Expire date is invalid.", "ccInvalidExpireMonth": "Expiration month is invalid.", "ccInvalidExpireYear": "Expiration year is invalid.", "ccMissingDetails": "Please fill up the credit card details.", "ccMissingProduct": "Please select at least one product.", "ccMissingDonation": "Please enter numeric values for donation amount.", "disallowDecimals": "Please enter a whole number.", "restrictedDomain": "This domain is not allowed", "ccDonationMinLimitError": "Minimum amount is {minAmount} {currency}", "requiredLegend": "All fields marked with * are required and must be filled.", "geoPermissionTitle": "Permission Denied", "geoPermissionDesc": "Check your browser's privacy settings.", "geoNotAvailableTitle": "Position Unavailable", "geoNotAvailableDesc": "Location provider not available. Please enter the address manually.", "geoTimeoutTitle": "Timeout", "geoTimeoutDesc": "Please check your internet connection and try again.", "selectedTime": "Selected Time", "formerSelectedTime": "Former Time", "cancelAppointment": "Cancel Appointment", "cancelSelection": "Cancel Selection", "noSlotsAvailable": "No slots available", "slotUnavailable": "{time} on {date} has been selected is unavailable. Please select another slot.", "multipleError": "There are {count} errors on this page. Please correct them before moving on.", "oneError": "There is {count} error on this page. Please correct it before moving on.", "doneMessage": "Well done! All errors are fixed.", "invalidTime": "Enter a valid time", "doneButton": "Done", "reviewSubmitText": "Review and Submit", "nextButtonText": "Next", "prevButtonText": "Previous", "seeErrorsButton": "See Errors", "notEnoughStock": "Not enough stock for the current selection", "notEnoughStock_remainedItems": "Not enough stock for the current selection ({count} items left)", "soldOut": "Sold Out", "justSoldOut": "Just Sold Out", "selectionSoldOut": "Selection Sold Out", "subProductItemsLeft": "({count} items left)", "startButtonText": "START", "submitButtonText": "Submit", "submissionLimit": "Sorry! Only one entry is allowed. Multiple submissions are disabled for this form.", "reviewBackText": "Back to Form", "seeAllText": "See All", "progressMiddleText": "of", "fieldError": "field has an error.", "error": "Error" }; JotForm.newPaymentUI = true; JotForm.importedPDF = "https://www.jotform.com/uploads/anthonycarlisi/form_files/pfc_fl_656a418a4ccab_UMEC_Commercial_Application.pdf?nc=1"; JotForm.importedPDFSettings = { "isConnected": "Yes", "enableThumbnail": "Yes", "hasPreviewButton": "No", "startButtonText": "Start Filling", "formType": "legacyForm", "welcomeThumbnail": "" }; JotForm.replaceTagTest = true; JotForm.setCalculations([{ "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "84", "equation": "{84}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_1699478621745", "resultField": "85", "decimalPlaces": "2", "isError": false, "conditionId": "1699478638834", "conditionTrue": false, "baseField": "84" }, { "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "9", "equation": "{9}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_1699474960073", "resultField": "79", "decimalPlaces": "2", "isError": false, "conditionId": "1699474999353", "conditionTrue": false, "baseField": "9" }, { "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "80", "equation": "{80}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_1699463018356", "resultField": "81", "decimalPlaces": "2", "isError": false, "conditionId": "1699463028930", "conditionTrue": false, "baseField": "80" }, { "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "72", "equation": "{72}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699461408401", "resultField": "73", "decimalPlaces": "2", "isError": false, "conditionId": "1699453024606", "conditionTrue": false, "baseField": "72" }, { "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "144", "equation": "{144}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699887698126", "resultField": "92", "decimalPlaces": "2", "isError": false, "conditionId": "1699460858211", "conditionTrue": false, "baseField": "144" }, { "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "76", "equation": "{76}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699887680222", "resultField": "78", "decimalPlaces": "2", "isError": false, "conditionId": "1699887680222", "conditionTrue": false, "baseField": "76" }, { "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "122", "equation": "{122}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699626041195", "resultField": "117", "decimalPlaces": "2", "isError": false, "conditionId": "1699625151054", "conditionTrue": false, "baseField": "122" }, { "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "112", "equation": "{112}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699626040185", "resultField": "113", "decimalPlaces": "2", "isError": false, "conditionId": "1699626040185", "conditionTrue": false, "baseField": "112" }, { "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "106", "equation": "{106}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699625676368", "resultField": "104", "decimalPlaces": "2", "isError": false, "conditionId": "1699625676368", "conditionTrue": false, "baseField": "106" }, { "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "62", "equation": "{62}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699625454351", "resultField": "63", "decimalPlaces": "2", "isError": false, "conditionId": "1699625454351", "conditionTrue": false, "baseField": "62" }, { "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "9", "equation": "{9}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699467995787", "resultField": "79", "decimalPlaces": "2", "isError": false, "conditionId": "1699462337006", "conditionTrue": false, "baseField": "88" }, { "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "68", "equation": "{68}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699467978033", "resultField": "77", "decimalPlaces": "2", "isError": false, "conditionId": "1699462463213", "conditionTrue": false, "baseField": "88" }, { "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "82", "equation": "{82}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699466849869", "resultField": "83", "decimalPlaces": "2", "isError": false, "conditionId": "1699466848910", "conditionTrue": false, "baseField": "82" }]); JotForm.setConditions([{ "action": [{ "id": "action_1710426943437", "visibility": "Show", "isError": false, "field": "150" }], "id": "1710426959141", "index": "0", "link": "Any", "priority": "0", "terms": [{ "id": "term_1710426943437", "field": "87", "operator": "equals", "value": "YES", "isError": false }], "type": "field" }, { "action": [{ "id": "action_1699633740549", "visibility": "Show", "isError": false, "field": "133" }], "id": "1699633763751", "index": "1", "link": "Any", "priority": "1", "terms": [{ "id": "term_1699633740549", "field": "129", "operator": "equals", "value": "YES", "isError": false }], "type": "field" }, { "action": [{ "id": "action_0_1699891643142", "visibility": "UnrequireMultiple", "fields": ["89", "144", "93", "94", "95", "96", "100", "97", "102", "103", "106", "108", "109", "110", "111", "112"], "isError": false }], "id": "1699633545750", "index": "2", "isError": "1", "link": "Any", "priority": "2", "terms": [{ "id": "term_0_1699891643142", "field": "127", "operator": "equals", "value": "YES", "isError": false }], "type": "require" }, { "action": [{ "id": "action_0_1699891611994", "visibility": "HideMultiple", "isError": false, "fields": ["98", "89", "144", "93", "94", "95", "96", "101", "100", "97", "102", "103", "106", "107", "108", "109", "110", "111", "112", "123", "115", "118", "119", "120", "121", "122"] }], "id": "1699633512707", "index": "3", "isError": "1", "link": "Any", "priority": "3", "terms": [{ "id": "term_0_1699891611994", "field": "127", "operator": "equals", "value": "YES", "isError": false }], "type": "field" }, { "action": [{ "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "84", "equation": "{84}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_1699478621745", "resultField": "85", "decimalPlaces": "2", "isError": false, "conditionId": "1699478638834", "conditionTrue": false, "baseField": "84" }], "id": "1699478638834", "index": "4", "link": "Any", "priority": "4", "terms": [{ "id": "term_1699478621745", "field": "84", "operator": "isFilled", "value": "", "isError": false }], "type": "calculation" }, { "action": [{ "id": "action_1699476399842", "visibility": "ShowMultiple", "isError": false, "fields": ["76", "77"] }], "id": "1699476412748", "index": "5", "link": "Any", "priority": "5", "terms": [{ "id": "term_1699476399842", "field": "88", "operator": "equals", "value": "NO", "isError": false }], "type": "field" }, { "action": [{ "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "9", "equation": "{9}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_1699474960073", "resultField": "79", "decimalPlaces": "2", "isError": false, "conditionId": "1699474999353", "conditionTrue": false, "baseField": "9" }], "id": "1699474999353", "index": "6", "link": "Any", "priority": "6", "terms": [{ "id": "term_1699474966026", "field": "9", "operator": "isFilled", "value": "", "isError": false }, { "id": "term_1699474960073", "field": "88", "operator": "equals", "value": "YES", "isError": false }], "type": "calculation" }, { "action": [{ "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "80", "equation": "{80}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_1699463018356", "resultField": "81", "decimalPlaces": "2", "isError": false, "conditionId": "1699463028930", "conditionTrue": false, "baseField": "80" }], "id": "1699463028930", "index": "7", "link": "Any", "priority": "7", "terms": [{ "id": "term_1699463018356", "field": "80", "operator": "isFilled", "value": "", "isError": false }], "type": "calculation" }, { "action": [{ "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "72", "equation": "{72}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699461408401", "resultField": "73", "decimalPlaces": "2", "isError": false, "conditionId": "1699453024606", "conditionTrue": false, "baseField": "72" }], "id": "1699453024606", "index": "8", "link": "Any", "priority": "8", "terms": [{ "id": "term_0_1699461408401", "field": "72", "operator": "isFilled", "value": "", "isError": false }], "type": "calculation" }, { "action": [{ "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "144", "equation": "{144}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699887698126", "resultField": "92", "decimalPlaces": "2", "isError": false, "conditionId": "1699460858211", "conditionTrue": false, "baseField": "144" }], "id": "1699460858211", "index": "9", "link": "Any", "priority": "9", "terms": [{ "id": "term_0_1699887698126", "field": "144", "operator": "isFilled", "value": "", "isError": false }], "type": "calculation" }, { "action": [{ "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "76", "equation": "{76}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699887680222", "resultField": "78", "decimalPlaces": "2", "isError": false, "conditionId": "1699887680222", "conditionTrue": false, "baseField": "76" }], "id": "1699887680222", "index": "10", "link": "Any", "priority": "10", "terms": [{ "id": "term_0_1699887680222", "field": "76", "operator": "isFilled", "value": "", "isError": false }], "type": "calculation" }, { "action": [{ "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "122", "equation": "{122}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699626041195", "resultField": "117", "decimalPlaces": "2", "isError": false, "conditionId": "1699625151054", "conditionTrue": false, "baseField": "122" }], "id": "1699625151054", "index": "11", "link": "Any", "priority": "11", "terms": [{ "id": "term_0_1699626041195", "field": "122", "operator": "isFilled", "value": "", "isError": false }], "type": "calculation" }, { "action": [{ "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "112", "equation": "{112}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699626040185", "resultField": "113", "decimalPlaces": "2", "isError": false, "conditionId": "1699626040185", "conditionTrue": false, "baseField": "112" }], "id": "1699626040185", "index": "12", "link": "Any", "priority": "12", "terms": [{ "id": "term_0_1699626040185", "field": "112", "operator": "isFilled", "value": "", "isError": false }], "type": "calculation" }, { "action": [{ "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "106", "equation": "{106}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699625676368", "resultField": "104", "decimalPlaces": "2", "isError": false, "conditionId": "1699625676368", "conditionTrue": false, "baseField": "106" }], "id": "1699625676368", "index": "13", "link": "Any", "priority": "13", "terms": [{ "id": "term_0_1699625676368", "field": "106", "operator": "isFilled", "value": "", "isError": false }], "type": "calculation" }, { "action": [{ "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "62", "equation": "{62}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699625454351", "resultField": "63", "decimalPlaces": "2", "isError": false, "conditionId": "1699625454351", "conditionTrue": false, "baseField": "62" }], "id": "1699625454351", "index": "14", "link": "Any", "priority": "14", "terms": [{ "id": "term_0_1699625454351", "field": "62", "operator": "isFilled", "value": "", "isError": false }], "type": "calculation" }, { "action": [{ "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "9", "equation": "{9}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699467995787", "resultField": "79", "decimalPlaces": "2", "isError": false, "conditionId": "1699462337006", "conditionTrue": false, "baseField": "88" }], "id": "1699462337006", "index": "15", "link": "Any", "priority": "15", "terms": [{ "id": "term_0_1699467995787", "field": "88", "operator": "equals", "value": "YES", "isError": false }], "type": "calculation" }, { "action": [{ "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "68", "equation": "{68}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699467978033", "resultField": "77", "decimalPlaces": "2", "isError": false, "conditionId": "1699462463213", "conditionTrue": false, "baseField": "88" }], "id": "1699462463213", "index": "16", "link": "Any", "priority": "16", "terms": [{ "id": "term_0_1699467978033", "field": "88", "operator": "equals", "value": "YES", "isError": false }], "type": "calculation" }, { "action": [{ "replaceText": "", "readOnly": false, "newCalculationType": true, "useCommasForDecimals": false, "operands": "82", "equation": "{82}", "showBeforeInput": false, "showEmptyDecimals": false, "ignoreHiddenFields": false, "insertAsText": false, "id": "action_0_1699466849869", "resultField": "83", "decimalPlaces": "2", "isError": false, "conditionId": "1699466848910", "conditionTrue": false, "baseField": "82" }], "id": "1699466848910", "index": "17", "link": "Any", "priority": "17", "terms": [{ "id": "term_0_1699466849869", "field": "82", "operator": "isFilled", "value": "", "isError": false }], "type": "calculation" }]); JotForm.clearFieldOnHide = "disable"; JotForm.submitError = "jumpToFirstError"; JotForm.isFullSource = true; JotForm.init(function () { /*INIT-START*/
+    if (window.JotForm && JotForm.accessible) $('input_5').setAttribute('tabindex', 0)
+    if (window.JotForm && JotForm.accessible) $('input_64').setAttribute('tabindex', 0); JotForm.setPhoneMaskingValidator('input_67_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023')
+    if (window.JotForm && JotForm.accessible) $('input_65').setAttribute('tabindex', 0); JotForm.setInputTextMasking('input_65', '\u0023\u0023\u002d\u0023\u0023\u0023\u0023\u0023\u0023\u0023'); JotForm.autoCompletes['input_72'] = 'BUS COMPANY\nBUS COMPANY EXEMPT\nCHURCH\nCITY BID\nCOMMERCIAL\nCOMMERCIAL HEATING\nCOMMERCIAL HEATING IG\nCOUNTY BID\nDCAS\nDEFENSE\nDRY CLEANERS\nEMPLOYEE\nES BOCES\nFARMING\nGAS INTERRUPTIBLE\nGASBOY\nGENERATOR\nHEAP\nHEAT\nHOSPITAL\nINTERCOMPANY\nINTER-GAS COMMERCIAL HEATING\nINTER-GAS MULTI DWELLING\nMANUFACTURING\nMARINAS\nMETRO NORTH\nMULTI DWELLING\nMULTI DWELLING IG\nNASSAU BOCES\nNATIONAL GRID\nNYSOG\nOTHERS\nPRIVATE BID\nPRIVATE HOMES\nSCHOOL PRIVATE\nSCHOOL PUBLIC\nSERVICE STATION\nSUFFOLK COUNTY\nTRANSPORTATION\nUPS\nVESSEL COMMERCIAL\nVESSEL RECREATION\nWESTCHESTER\nWS BOCES '
+    if (window.JotForm && JotForm.accessible) $('input_68').setAttribute('tabindex', 0)
+    if (window.JotForm && JotForm.accessible) $('input_77').setAttribute('tabindex', 0); JotForm.setPhoneMaskingValidator('input_126_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023')
+    if (window.JotForm && JotForm.accessible) $('input_89').setAttribute('tabindex', 0); JotForm.setPhoneMaskingValidator('input_95_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023')
+    if (window.JotForm && JotForm.accessible) $('input_96').setAttribute('tabindex', 0)
+    if (window.JotForm && JotForm.accessible) $('input_100').setAttribute('tabindex', 0); JotForm.setPhoneMaskingValidator('input_103_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023')
+    if (window.JotForm && JotForm.accessible) $('input_108').setAttribute('tabindex', 0); JotForm.setPhoneMaskingValidator('input_111_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023')
+    if (window.JotForm && JotForm.accessible) $('input_118').setAttribute('tabindex', 0); JotForm.setPhoneMaskingValidator('input_121_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023'); JotForm.calendarMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {}; JotForm.calenderViewMonths[136] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; if (!JotForm.calenderViewDays) JotForm.calenderViewDays = {}; JotForm.calenderViewDays[136] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]; JotForm.calendarDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]; JotForm.calendarOther = { "today": "Today" }; var languageOptions = document.querySelectorAll('#langList li'); for (var langIndex = 0; langIndex < languageOptions.length; langIndex++) { languageOptions[langIndex].on('click', function (e) { setTimeout(function () { JotForm.setCalendar("136", false, { "days": { "monday": true, "tuesday": true, "wednesday": true, "thursday": true, "friday": true, "saturday": true, "sunday": true }, "future": true, "past": true, "custom": false, "ranges": false, "start": "", "end": "", "countSelectedDaysOnly": false }) }, 0) }) } JotForm.onTranslationsFetch(function () { JotForm.setCalendar("136", false, { "days": { "monday": true, "tuesday": true, "wednesday": true, "thursday": true, "friday": true, "saturday": true, "sunday": true }, "future": true, "past": true, "custom": false, "ranges": false, "start": "", "end": "", "countSelectedDaysOnly": false }) }); JotForm.formatDate({ date: (new Date()), dateField: $("id_" + 136) })
+    if (window.JotForm && JotForm.accessible) $('input_92').setAttribute('tabindex', 0)
+    if (window.JotForm && JotForm.accessible) $('input_63').setAttribute('tabindex', 0)
+    if (window.JotForm && JotForm.accessible) $('input_104').setAttribute('tabindex', 0)
+    if (window.JotForm && JotForm.accessible) $('input_113').setAttribute('tabindex', 0)
+    if (window.JotForm && JotForm.accessible) $('input_117').setAttribute('tabindex', 0)
+    if (window.JotForm && JotForm.accessible) $('input_73').setAttribute('tabindex', 0)
+    if (window.JotForm && JotForm.accessible) $('input_78').setAttribute('tabindex', 0)
+    if (window.JotForm && JotForm.accessible) $('input_81').setAttribute('tabindex', 0)
+    if (window.JotForm && JotForm.accessible) $('input_83').setAttribute('tabindex', 0)
+    if (window.JotForm && JotForm.accessible) $('input_85').setAttribute('tabindex', 0); JotForm.alterTexts(undefined); setTimeout(function () { JotForm.initMultipleUploads() }, 2) /*INIT-END*/
+  }); setTimeout(function () {
+    JotForm.paymentExtrasOnTheFly([null, null, null, null, null, { "description": "", "name": "legalname", "qid": "5", "subLabel": "", "text": "Legal Name", "type": "control_textbox" }, null, null, null, { "description": "", "name": "deliveryAddress9", "qid": "9", "text": "Delivery Address for PDF", "type": "control_address" }, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, { "description": "", "name": "authorizedsignature", "qid": "57", "subLabel": "", "text": "Authorized Signature", "type": "control_signature" }, null, null, null, { "name": "submit", "qid": "61", "text": "Submit", "type": "control_button" }, { "name": "typeA", "qid": "62", "text": "Delivery Address", "type": "control_widget" }, { "description": "", "mde": "No", "name": "deliveryAddress", "qid": "63", "subLabel": "", "text": "Delivery Address Variable", "type": "control_textarea", "wysiwyg": "Disable" }, { "description": "", "name": "dba", "qid": "64", "subLabel": "", "text": "DBA \u002F Management Company", "type": "control_textbox" }, { "description": "", "name": "federalTax", "qid": "65", "subLabel": "", "text": "Federal Tax ID (FEIN)", "type": "control_textbox" }, { "description": "", "name": "federalTax66", "qid": "66", "subLabel": "", "text": "Federal Tax ID Confirmation Letter (CP 575)", "type": "control_fileupload" }, { "description": "", "name": "phoneNumber", "qid": "67", "text": "Phone Number", "type": "control_phone" }, { "description": "", "name": "deliveryCounty", "qid": "68", "subLabel": "", "text": "Delivery County", "type": "control_textbox" }, { "description": "", "name": "stateOf", "qid": "69", "subLabel": "", "text": "State of Incorporation", "type": "control_dropdown" }, { "description": "", "name": "nameOf", "qid": "70", "text": "Name of Owner \u002F Officer", "type": "control_fullname" }, { "description": "", "name": "email", "qid": "71", "subLabel": "example@example.com", "text": "Email", "type": "control_email" }, { "description": "", "name": "typeOf", "qid": "72", "subLabel": "", "text": "Type of Business", "type": "control_autocomp" }, { "description": "", "name": "typeOf73", "qid": "73", "subLabel": "", "text": "Type of Business Variable", "type": "control_textbox" }, { "description": "", "name": "legalType", "qid": "74", "text": "Legal Type", "type": "control_radio" }, null, { "name": "mailingAddress", "qid": "76", "text": "Mailing Address", "type": "control_widget" }, { "description": "", "name": "mailingCounty", "qid": "77", "subLabel": "", "text": "Mailing County", "type": "control_textbox" }, { "description": "", "mde": "No", "name": "mailingAddress78", "qid": "78", "subLabel": "", "text": "Mailing Address Variable", "type": "control_textarea", "wysiwyg": "Disable" }, { "description": "", "name": "mailingAddress79", "qid": "79", "text": "Mailing Address for PDF", "type": "control_address" }, { "name": "typeA80", "qid": "80", "text": "Product(s) Requested", "type": "control_widget" }, { "description": "", "name": "productsRequested", "qid": "81", "subLabel": "", "text": "Product(s) Requested Variable", "type": "control_textbox" }, { "name": "typeA82", "qid": "82", "text": "Estimated Annual Volume (GAL)", "type": "control_widget" }, { "description": "", "name": "estimatedAnnual", "qid": "83", "subLabel": "", "text": "Estimated Annual Volume (GAL) Variable", "type": "control_textbox" }, { "name": "creditLine", "qid": "84", "text": "Credit line Requested", "type": "control_widget" }, { "description": "", "name": "creditLine85", "qid": "85", "subLabel": "", "text": "Credit line Requested Variable", "type": "control_textbox" }, null, { "description": "", "name": "financialStatements87", "qid": "87", "text": "Financial Statements?", "type": "control_radio" }, { "description": "", "name": "mailingAddress88", "qid": "88", "text": "Mailing address the same as Delivery Address?", "type": "control_radio" }, { "description": "", "name": "nameOf89", "qid": "89", "subLabel": "", "text": "Name of Bank", "type": "control_textbox" }, null, { "description": "", "name": "bankAddress91", "qid": "91", "text": "Bank Address PDF", "type": "control_address" }, { "description": "", "mde": "No", "name": "bankAddress92", "qid": "92", "subLabel": "", "text": "Bank Address Variable", "type": "control_textarea", "wysiwyg": "Disable" }, { "description": "", "name": "bankContact", "qid": "93", "text": "Bank Contact Name", "type": "control_fullname" }, { "description": "", "name": "bankContact94", "qid": "94", "subLabel": "example@example.com", "text": "Bank Contact Email", "type": "control_email" }, { "description": "", "name": "bankPhone", "qid": "95", "text": "Bank Phone Number", "type": "control_phone" }, { "description": "", "name": "accountNumber", "qid": "96", "subLabel": "", "text": "Account Number", "type": "control_textbox" }, { "description": "", "name": "contactName", "qid": "97", "text": "Contact Name", "type": "control_fullname" }, { "name": "input98", "qid": "98", "text": "Bank Reference", "type": "control_text" }, { "name": "input99", "qid": "99", "text": "Business Information", "type": "control_text" }, { "description": "", "name": "companyName", "qid": "100", "subLabel": "", "text": "Company Name", "type": "control_textbox" }, { "name": "input101", "qid": "101", "text": "Trade References", "type": "control_text" }, { "description": "", "name": "email102", "qid": "102", "subLabel": "example@example.com", "text": "Email", "type": "control_email" }, { "description": "", "name": "phoneNumber103", "qid": "103", "text": "Phone Number", "type": "control_phone" }, { "description": "", "mde": "No", "name": "tradeReference", "qid": "104", "subLabel": "", "text": "Trade Reference 1 Address Variable", "type": "control_textarea", "wysiwyg": "Disable" }, { "description": "", "name": "tradeReference105", "qid": "105", "text": "Trade Reference 1 Address for PDF", "type": "control_address" }, { "name": "companyAddress", "qid": "106", "text": "Company Address", "type": "control_widget" }, { "name": "divider", "qid": "107", "text": "Divider", "type": "control_divider" }, { "description": "", "name": "companyName108", "qid": "108", "subLabel": "", "text": "Company Name", "type": "control_textbox" }, { "description": "", "name": "contactName109", "qid": "109", "text": "Contact Name", "type": "control_fullname" }, { "description": "", "name": "email110", "qid": "110", "subLabel": "example@example.com", "text": "Email", "type": "control_email" }, { "description": "", "name": "phoneNumber111", "qid": "111", "text": "Phone Number", "type": "control_phone" }, { "name": "companyAddress112", "qid": "112", "text": "Company Address", "type": "control_widget" }, { "description": "", "mde": "No", "name": "tradeReference113", "qid": "113", "subLabel": "", "text": "Trade Reference 2 Address Variable", "type": "control_textarea", "wysiwyg": "Disable" }, { "description": "", "name": "tradeReference114", "qid": "114", "text": "Trade Reference 2 Address for PDF", "type": "control_address" }, { "name": "divider115", "qid": "115", "text": "Divider", "type": "control_divider" }, { "description": "", "name": "tradeReference116", "qid": "116", "text": "Trade Reference 3 Address for PDF", "type": "control_address" }, { "description": "", "mde": "No", "name": "tradeReference117", "qid": "117", "subLabel": "", "text": "Trade Reference 3 Address Variable", "type": "control_textarea", "wysiwyg": "Disable" }, { "description": "", "name": "companyName118", "qid": "118", "subLabel": "", "text": "Company Name", "type": "control_textbox" }, { "description": "", "name": "contactName119", "qid": "119", "text": "Contact Name", "type": "control_fullname" }, { "description": "", "name": "email120", "qid": "120", "subLabel": "example@example.com", "text": "Email", "type": "control_email" }, { "description": "", "name": "phoneNumber121", "qid": "121", "text": "Phone Number", "type": "control_phone" }, { "name": "companyAddress122", "qid": "122", "text": "Company Address", "type": "control_widget" }, { "name": "additionalTrade", "qid": "123", "text": "Additional Trade Reference", "type": "control_collapse" }, { "name": "clickTo", "qid": "124", "text": "", "type": "control_collapse" }, { "name": "ltpStyletextalign", "qid": "125", "text": "Owner \u002F Officer Information", "type": "control_text" }, { "description": "", "name": "phoneNumber126", "qid": "126", "text": "Phone Number", "type": "control_phone" }, null, { "name": "ltpStyletextalign128", "qid": "128", "text": "Product(s) Information", "type": "control_text" }, { "description": "", "name": "applicantWill", "qid": "129", "text": "Applicant will accept invoices via email", "type": "control_radio" }, { "description": "", "name": "hasApplicant", "qid": "130", "text": "Has Applicant and\u002For any individual with an ownership interest filed for bankruptcy?", "type": "control_radio" }, { "description": "", "name": "isThere", "qid": "131", "text": "Is there any pending or threatening litigation against the Applicant and\u002For any Individual with ownership interest in the Applicant?", "type": "control_radio" }, { "description": "", "name": "areThere", "qid": "132", "text": "Are there any outstanding judgements against the Applicant and\u002For any individual with ownership interest in the Applicant?", "type": "control_radio" }, { "description": "", "name": "email133", "qid": "133", "subLabel": "example@example.com", "text": "Email", "type": "control_email" }, null, null, { "description": "", "name": "date", "qid": "136", "text": "Date", "type": "control_datetime" }, null, null, null, null, null, { "description": "", "name": "typeA142", "qid": "142", "text": "", "type": "control_checkbox" }, { "name": "input143", "qid": "143", "text": " Applicant hereby acknowledges that it has read and agrees to the credit terms and conditions contained herein, including the Additional Terms (attached and initialed) annexed hereto and collectively \"Terms\", including subsequent modifications thereto. Applicant certifies that the above information and any attachments hereto are true and furnished for the purpose of inducing United Metro Energy Corp. (UMEC) to extend credit to the undersigned. Applicant agrees to the Terms disclosed in any credit or purchase agreement subsequently issued and that any purchases shall constitute acceptance of those Terms. Applicant authorized UMEC to receive information regarding its banking relationship from the above‐named financial institution. Applicant authorizes UMEC to investigate Applicant's credit record, obtain credit reports, verify assets, debts, references, income information, and report same to a credit reporting agency and to answer any questions regarding Applicant's credit history with UMEC. If UMEC refers the account to an attorney or collection agency, Applicant agrees to pay all reasonable attorney's fees, court costs, and costs of collection. Applicant agrees that a reasonable hourly fee or one‐third contingency fee shall be a reasonable attorney fee in the event any matter is referred to an attorney or collection agency for collection. The above authorizations shall be continuing in nature. Upon request, UMEC will inform the Applicant of the name and address of the credit reporting agency which furnished the report", "type": "control_text" }, { "name": "bankAddress144", "qid": "144", "text": "Bank Address", "type": "control_widget" }, { "description": "", "labelText": "", "name": "image", "qid": "145", "text": "icon,%20right%20text,%20curved%20underlined.654e93f79419b6.05107900", "type": "control_image" }, { "name": "creditApplication", "qid": "146", "text": "Credit Application (Commercial and Multi‐Dwelling)", "type": "control_head" }, { "description": "", "name": "printedName", "qid": "147", "text": "Printed Name", "type": "control_fullname" }, null, null, { "description": "", "name": "financialStatements", "qid": "150", "subLabel": "", "text": "Financial Statements Upload", "type": "control_fileupload" }])
+  }, 20); </script>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/stylebuilder/static/form-common.css?v=3648d64
+" />
+<style type="text/css">
+  @media print {
+    * {
+      -webkit-print-color-adjust: exact !important;
+      color-adjust: exact !important;
+    }
+
+    .form-section {
+      display: inline !important
+    }
+
+    .form-pagebreak {
+      display: none !important
+    }
+
+    .form-section-closed {
+      height: auto !important
+    }
+
+    .page-section {
+      position: initial !important
+    }
+  }
+</style>
+<link type="text/css" rel="stylesheet"
+  href="https://cdn02.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.52358&themeRevisionID=65660e4b326633110492e01a" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_styles.css?3.3.52358" />
+<link type="text/css" rel="stylesheet"
+  href="https://cdn01.jotfor.ms/css/styles/payment/payment_feature.css?3.3.52358" />
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/stylebuilder/static/donationBox.css?v=3.3.52358">
+<style type="text/css" id="form-designer-style">
+  /* Injected CSS Code */
+  /* Begining of advanced designer */
+  /*PREFERENCES STYLE*/
+  /* 1 - Preferences style */
+  /* 1 - FONT FAMILY */
+  .form-all {
+    font-family: "Inter", sans-serif;
+  }
+
+  /* 2 - FORM WIDTH */
+  .form-all {
+    max-width: 752px;
+  }
+
+  /* 5 - FONT SIZE */
+  .form-all {
+    font-size: 16px;
+  }
+
+  /* 5 - input bg color */
+  .form-textbox,
+  .form-textarea,
+  .form-radio-other-input,
+  .form-checkbox-other-input,
+  .form-captcha input,
+  .form-spinner input {
+    background-color: #ffffff;
+  }
+
+  /* 10 - LINE SPACING */
+  .form-line {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .supernova .form-all,
+  .form-all {
+    background-color: #ffffff;
+  }
+
+  .supernova {
+    background-color: #f3f3fe;
+  }
+
+  .supernova body {
+    background-color: transparent;
+  }
+
+  .form-all,
+  .form-label-top,
+  .form-label-left,
+  .form-label-right,
+  .form-html,
+  .form-checkbox-item label,
+  .form-radio-item label,
+  span.FITB .qb-checkbox-label,
+  span.FITB .qb-radiobox-label,
+  span.FITB .form-radio label,
+  span.FITB .form-checkbox label,
+  [data-blotid][data-type=checkbox] [data-labelid],
+  [data-blotid][data-type=radiobox] [data-labelid],
+  span.FITB-inptCont[data-type=checkbox] label,
+  span.FITB-inptCont[data-type=radiobox] label,
+  .form-sub-label {
+    color: #2c3345;
+  }
+
+  .form-all {
+    margin: 72px auto;
+  }
+
+  .form-all:before {
+    content: none;
+  }
+
+  /*PREFERENCES STYLE*/
+  /* 17 - INPUT WIDTHS */
+  /* 20 - FORM PADDING */
+  ul.form-section {
+    padding: 0px 38px;
+  }
+
+  /* Heights */
+  /* 11 - LINE PADDING */
+  /* LABEL STYLE */
+  /* 12 - ROUNDED INPUTS */
+  .form-radio-item,
+  .form-checkbox-item {
+    padding-bottom: 0px;
+  }
+
+  .form-radio-item:last-child,
+  .form-checkbox-item:last-child {
+    padding-bottom: 0;
+  }
+
+  .form-single-column .form-checkbox-item,
+  .form-single-column .form-radio-item {
+    width: 100%;
+  }
+
+  .form-checkbox-item .editor-container div,
+  .form-radio-item .editor-container div {
+    position: relative;
+  }
+
+  .form-checkbox-item .editor-container div:before,
+  .form-radio-item .editor-container div:before {
+    display: inline-block;
+    vertical-align: middle;
+    left: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .form-checkbox-item input,
+  .form-radio-item input {
+    margin-top: 2px;
+  }
+
+  .form-checkbox:checked+label:before,
+  .form-checkbox:checked+span:before {
+    background-color: #2e69ff;
+    border-color: #2e69ff;
+  }
+
+  .form-radio:checked+label:before,
+  .form-radio:checked+span:before {
+    border-color: #2e69ff;
+  }
+
+  .form-radio:checked+label:after,
+  .form-radio:checked+span:after {
+    background-color: #2e69ff;
+  }
+
+  .form-checkbox:hover+label:before,
+  .form-checkbox:hover+span:before,
+  .form-radio:hover+label:before,
+  .form-radio:hover+span:before {
+    border-color: rgba(46, 105, 255, 0.5);
+    box-shadow: 0 0 0 2px rgba(46, 105, 255, 0.25);
+  }
+
+  .form-checkbox:focus+label:before,
+  .form-checkbox:focus+span:before,
+  .form-radio:focus+label:before,
+  .form-radio:focus+span:before {
+    border-color: #2e69ff;
+    box-shadow: 0 0 0 3px rgba(46, 105, 255, 0.25);
+  }
+
+  .submit-button {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: inherit;
+  }
+
+  .submit-button {
+    min-width: 180px;
+  }
+
+  .form-all .form-pagebreak-back,
+  .form-all .form-pagebreak-next {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .form-all .form-pagebreak-back,
+  .form-all .form-pagebreak-next {
+    min-width: 128px;
+  }
+
+  li[data-type="control_image"] div {
+    text-align: left;
+  }
+
+  li[data-type="control_image"] img {
+    border: none;
+    border-width: 0px !important;
+    border-style: solid !important;
+    border-color: false !important;
+  }
+
+  .supernova {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-repeat: repeat;
+  }
+
+  .supernova {
+    background-image: none;
+  }
+
+  #stage {
+    background-image: none;
+  }
+
+  /* | */
+  .form-all {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-repeat: repeat;
+  }
+
+  .form-header-group {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+  }
+
+  .header-large h1.form-header {
+    font-size: 2em;
+  }
+
+  .header-large h2.form-header {
+    font-size: 1.5em;
+  }
+
+  .header-large h3.form-header {
+    font-size: 1.17em;
+  }
+
+  .header-large h1+.form-subHeader {
+    font-size: 1em;
+  }
+
+  .header-large h2+.form-subHeader {
+    font-size: .875em;
+  }
+
+  .header-large h3+.form-subHeader {
+    font-size: .75em;
+  }
+
+  .header-default h1.form-header {
+    font-size: 2em;
+  }
+
+  .header-default h2.form-header {
+    font-size: 1.5em;
+  }
+
+  .header-default h3.form-header {
+    font-size: 1.17em;
+  }
+
+  .header-default h1+.form-subHeader {
+    font-size: 1em;
+  }
+
+  .header-default h2+.form-subHeader {
+    font-size: .875em;
+  }
+
+  .header-default h3+.form-subHeader {
+    font-size: .75em;
+  }
+
+  .header-small h1.form-header {
+    font-size: 2em;
+  }
+
+  .header-small h2.form-header {
+    font-size: 1.5em;
+  }
+
+  .header-small h3.form-header {
+    font-size: 1.17em;
+  }
+
+  .header-small h1+.form-subHeader {
+    font-size: 1em;
+  }
+
+  .header-small h2+.form-subHeader {
+    font-size: .875em;
+  }
+
+  .header-small h3+.form-subHeader {
+    font-size: .75em;
+  }
+
+  .form-header-group {
+    text-align: left;
+  }
+
+  .form-header-group {
+    font-family: "false", sans-serif;
+  }
+
+  div.form-header-group.header-large,
+  div.form-header-group.hasImage {
+    margin: 0px -38px;
+  }
+
+  div.form-header-group.header-large,
+  div.form-header-group.hasImage {
+    padding: 40px 52px;
+  }
+
+  .form-header-group .form-header,
+  .form-header-group .form-subHeader {
+    color: -1;
+  }
+
+  .form-line-error {
+    -webkit-transition-property: none;
+    -moz-transition-property: none;
+    -ms-transition-property: none;
+    -o-transition-property: none;
+    transition-property: none;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    background-color: #fff4f4;
+  }
+
+  .form-line-error .form-error-message {
+    background-color: #f23a3c;
+    clear: both;
+    float: none;
+  }
+
+  .form-line-error .form-error-message .form-error-arrow {
+    border-bottom-color: #f23a3c;
+  }
+
+  .form-line-error input:not(#coupon-input),
+  .form-line-error textarea,
+  .form-line-error .form-validation-error {
+    border: 1px solid #f23a3c;
+    box-shadow: 0 0 3px #f23a3c;
+  }
+
+  .form-line-error {
+    -webkit-transition-property: none;
+    -moz-transition-property: none;
+    -ms-transition-property: none;
+    -o-transition-property: none;
+    transition-property: none;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    background-color: #fff4f4;
+  }
+
+  .form-line-active {
+    background-color: #f1f5ff;
+  }
+
+  /* 29 - FORM COLUMNS */
+  /*__INSPECT_SEPERATOR__*/
+  /* Injected CSS Code */
+</style>
+<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();"
+  action="https://submit.jotform.com/submit/233093970528058" method="post" enctype="multipart/form-data"
+  name="form_233093970528058" id="233093970528058" accept-charset="utf-8" autocomplete="on"><input type="hidden"
+    name="formID" value="233093970528058" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden"
+    id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker"
+    value="build-date-1710444241964" /><input type="hidden" id="submitSource" name="submitSource"
+    value="unknown" /><input type="hidden" id="buildDate" name="buildDate" value="1710444241964" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li class="form-line" data-type="control_image" id="id_145">
+        <div id="cid_145" class="form-input-wide" data-layout="full">
+          <div style="text-align:center" aria-hidden="true" role="none"><img alt="Image-145" loading="lazy"
+              class="form-image" style="border:0"
+              src="https://www.jotform.com/uploads/anthonycarlisi/form_files/icon,%20right%20text,%20curved%20underlined.654e93f79419b6.05107900.svg"
+              height="114px" width="648px" data-component="image" role="none" aria-hidden="true" tabindex="-1" /></div>
+        </div>
+      </li>
+      <li id="cid_146" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group header-default">
+          <div class="header-text httac htvam">
+            <h2 id="header_146" class="form-header" data-component="header">Credit Application (Commercial and
+              Multi‐Dwelling)</h2>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_99">
+        <div id="cid_99" class="form-input-wide" data-layout="full">
+          <div id="text_99" class="form-html" data-component="text" tabindex="0">
+            <p style="text-align: center; background-color: #808080;"><span
+                style="color: #ffffff; background-color: #v; font-size: 14pt;">Business Information</span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_textbox" id="id_5"><label
+          class="form-label form-label-top" id="label_5" for="input_5" aria-hidden="false"> Legal Name<span
+            class="form-required">*</span> </label>
+        <div id="cid_5" class="form-input-wide jf-required" data-layout="half"> <input type="text" id="input_5"
+            name="q5_legalname" data-type="input-textbox" class="form-textbox validate[required]" data-defaultvalue=""
+            style="width:20px" size="20" data-component="textbox" aria-labelledby="label_5" required="" value="" />
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-2" data-type="control_textbox" id="id_64"><label
+          class="form-label form-label-top" id="label_64" for="input_64" aria-hidden="false"> DBA / Management Company
+        </label>
+        <div id="cid_64" class="form-input-wide" data-layout="half"> <input type="text" id="input_64" name="q64_dba"
+            data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:20px" size="20"
+            data-component="textbox" aria-labelledby="label_64" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-3 jf-required" data-type="control_phone" id="id_67"><label
+          class="form-label form-label-top" id="label_67" for="input_67_full"> Phone Number<span
+            class="form-required">*</span> </label>
+        <div id="cid_67" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container"
+            style="vertical-align:top"><input type="tel" id="input_67_full" name="q67_phoneNumber[full]"
+              data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]"
+              data-defaultvalue="" autoComplete="section-input_67 tel-national" style="width:310px" data-masked="true"
+              placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_67 sublabel_67_masked"
+              required="" value="" /><label class="form-sub-label" for="input_67_full" id="sublabel_67_masked"
+              style="min-height:13px">Please enter a valid phone number.</label></span> </div>
+      </li>
+      <li class="form-line form-line-column form-col-4 jf-required" data-type="control_textbox" id="id_65"><label
+          class="form-label form-label-top" id="label_65" for="input_65" aria-hidden="false"> Federal Tax ID (FEIN)<span
+            class="form-required">*</span> </label>
+        <div id="cid_65" class="form-input-wide jf-required" data-layout="half"> <input type="text" id="input_65"
+            name="q65_federalTax" data-type="input-textbox" class="form-textbox validate[required, Fill Mask]"
+            data-defaultvalue="" style="width:310px" size="310" data-masked="true" data-component="textbox"
+            aria-labelledby="label_65" required="" value="" /> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_fileupload" id="id_66"><label
+          class="form-label form-label-top" id="label_66" for="input_66" aria-hidden="false"> Federal Tax ID
+          Confirmation Letter (CP 575)<span class="form-required">*</span> </label>
+        <div id="cid_66" class="form-input-wide jf-required" data-layout="full">
+          <div class="jfQuestion-fields" data-wrapper-react="true">
+            <div class="jfField isFilled">
+              <div class="jfUpload-wrapper">
+                <div class="jfUpload-container">
+                  <div class="jfUpload-button-container">
+                    <div class="jfUpload-button" aria-hidden="true" tabindex="0" style="display:none" data-version="v2">
+                      Browse Files<div class="jfUpload-heading forDesktop">Drag and drop files here</div>
+                      <div class="jfUpload-heading forMobile">Choose a file</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="jfUpload-files-container">
+                  <div class="validate[multipleUpload]"><input type="file" id="input_66" name="q66_federalTax66[]"
+                      multiple="" class="form-upload-multiple validate[required]" data-imagevalidate="yes"
+                      data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif"
+                      data-file-maxsize="10854" data-file-minsize="0" data-file-limit="" data-component="fileupload"
+                      required="" aria-label="Browse Files" /></div>
+                </div>
+              </div>
+              <div data-wrapper-react="true"></div>
+            </div><span style="display:none" class="cancelText">Cancel</span><span style="display:none"
+              class="ofText">of</span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_radio" id="id_74"><label
+          class="form-label form-label-top" id="label_74" aria-hidden="false"> Legal Type<span
+            class="form-required">*</span> </label>
+        <div id="cid_74" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_74" data-component="radio"><span
+              class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio"
+                aria-describedby="label_74" class="form-radio validate[required]" id="input_74_0" name="q74_legalType"
+                value="Sole Proprietorship" required="" /><label id="label_input_74_0" for="input_74_0">Sole
+                Proprietorship</label></span><span class="form-radio-item" style="clear:left"><span
+                class="dragger-item"></span><input type="radio" aria-describedby="label_74"
+                class="form-radio validate[required]" id="input_74_1" name="q74_legalType" value="Partnership"
+                required="" /><label id="label_input_74_1" for="input_74_1">Partnership</label></span><span
+              class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio"
+                aria-describedby="label_74" class="form-radio validate[required]" id="input_74_2" name="q74_legalType"
+                value="Corporation" required="" /><label id="label_input_74_2"
+                for="input_74_2">Corporation</label></span><span class="form-radio-item" style="clear:left"><span
+                class="dragger-item"></span><input type="radio" aria-describedby="label_74"
+                class="form-radio validate[required]" id="input_74_3" name="q74_legalType" value="Limited Liability"
+                required="" /><label id="label_input_74_3" for="input_74_3">Limited Liability</label></span></div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 jf-required" data-type="control_autocomp" id="id_72"><label
+          class="form-label form-label-top" id="label_72" for="input_72" aria-hidden="false"> Type of Business<span
+            class="form-required">*</span> </label>
+        <div id="cid_72" class="form-input-wide jf-required" data-layout="full"> <input type="text" id="input_72"
+            name="q72_typeOf" class="form-textbox validate[required] form-autocomplete" data-fuzzysearch="Yes"
+            data-maxmatches="100" data-defaultvalue="" autoComplete="nope" size="20" data-component="autocomplete"
+            aria-labelledby="label_72" required="" value="" /> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_widget" id="id_62"><label
+          class="form-label form-label-top form-label-auto" id="label_62" for="input_62" aria-hidden="false"> Delivery
+          Address<span class="form-required">*</span> </label>
+        <div id="cid_62" class="form-input-wide jf-required" data-layout="full">
+          <div data-widget-name="Autocompleted Address" style="width:100%;text-align:Left;overflow-x:auto"
+            data-component="widget-field"><iframe data-client-id="537f577e93a6564a47000013"
+              title="Autocompleted Address" frameBorder="0" scrolling="no" allowtransparency="true"
+              allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe"
+              class="custom-field-frame" id="customFieldFrame_62" src=""
+              style="max-width:800px;border:none;width:100%;height:250px" data-width="800" data-height="250"></iframe>
+            <div class="widget-inputs-wrapper"><input type="hidden" id="input_62"
+                class="form-hidden form-widget widget-required " name="q62_typeA" value="" /><input type="hidden"
+                id="widget_settings_62" class="form-hidden form-widget-settings"
+                value="%5B%7B%22name%22%3A%22fields%22%2C%22value%22%3A%22City%2CState%2CPostal%20code%2CHouse%20number%2CStreet%20name%22%7D%2C%7B%22name%22%3A%22route%22%2C%22value%22%3A%22Street%20name%22%7D%2C%7B%22name%22%3A%22streetNumber%22%2C%22value%22%3A%22House%20number%22%7D%2C%7B%22name%22%3A%22locality%22%2C%22value%22%3A%22City%22%7D%2C%7B%22name%22%3A%22administrativeAreaLevel1%22%2C%22value%22%3A%22State%22%7D%2C%7B%22name%22%3A%22postalCode%22%2C%22value%22%3A%22Postal%20code%22%7D%2C%7B%22name%22%3A%22country%22%2C%22value%22%3A%22Country%22%7D%2C%7B%22name%22%3A%22apiKey%22%2C%22value%22%3A%22AIzaSyB2dLOicHJgolKiUHivaqn3iR_qJgV8ark%22%7D%2C%7B%22name%22%3A%22customCSS%22%2C%22value%22%3A%22input%20%7B%5Cn%20%20%20%20%20height%3A%2040px%3B%5Cn%20%20%20%20%20width%3A%20310px%3B%5Cn%7D%5Cn%5Cn%5Cninput%5Btype%3Dtext%5D%20%20%7B%5Cn%20%20%20%20-moz-box-shadow%3A%20none%3B%5Cn%20%20%20%20-webkit-box-shadow%3A%20none%3B%5Cn%20%20%20%20%20box-shadow%3A%20none%3B%20%5Cnfont-size%3A%201em%3B%5Cn%7D%5Cn%5Cn%22%7D%5D"
+                data-version="2" /></div>
+            <script
+              type="text/javascript"> setTimeout(function () { var _cFieldFrame = document.getElementById("customFieldFrame_62"); if (_cFieldFrame) { _cFieldFrame.onload = function () { if (typeof widgetFrameLoaded !== 'undefined') { widgetFrameLoaded(62, { "formID": 233093970528058 }) } }; _cFieldFrame.src = "//app-widgets.jotform.io/autocompleteAddress/?qid=62&isOpenedInPortal=undefined&align=Left&ref=" + encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' + '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1); _cFieldFrame.addClassName("custom-field-frame-rendered") } }, 0); </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_textbox" id="id_68"><label
+          class="form-label form-label-top" id="label_68" for="input_68" aria-hidden="false"> Delivery County<span
+            class="form-required">*</span> </label>
+        <div id="cid_68" class="form-input-wide jf-required" data-layout="half"> <input type="text" id="input_68"
+            name="q68_deliveryCounty" data-type="input-textbox" class="form-textbox validate[required]"
+            data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_68"
+            required="" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 jf-required" data-type="control_dropdown" id="id_69"><label
+          class="form-label form-label-top" id="label_69" for="input_69" aria-hidden="false"> State of
+          Incorporation<span class="form-required">*</span> </label>
+        <div id="cid_69" class="form-input-wide jf-required" data-layout="half"> <select
+            class="form-dropdown validate[required]" id="input_69" name="q69_stateOf" style="width:310px"
+            data-component="dropdown" required="" aria-label="State of Incorporation">
+            <option value="">Please Select</option>
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AR">AR</option>
+            <option value="AZ">AZ</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DC">DC</option>
+            <option value="DE">DE</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="IA">IA</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="ME">ME</option>
+            <option value="MD">MD</option>
+            <option value="MA">MA</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MS">MS</option>
+            <option value="MO">MO</option>
+            <option value="MT">MT</option>
+            <option value="NE">NE</option>
+            <option value="NV">NV</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NY">NY</option>
+            <option value="NC">NC</option>
+            <option value="ND">ND</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VT">VT</option>
+            <option value="VA">VA</option>
+            <option value="WA">WA</option>
+            <option value="WV">WV</option>
+            <option value="WI">WI</option>
+            <option value="WY">WY</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-3 jf-required" data-type="control_radio" id="id_88"><label
+          class="form-label form-label-top" id="label_88" aria-hidden="false"> Mailing address the same as Delivery
+          Address?<span class="form-required">*</span> </label>
+        <div id="cid_88" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_88" data-component="radio"><span
+              class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio"
+                aria-describedby="label_88" class="form-radio validate[required]" id="input_88_0"
+                name="q88_mailingAddress88" value="YES" required="" /><label id="label_input_88_0"
+                for="input_88_0">YES</label></span><span class="form-radio-item" style="clear:left"><span
+                class="dragger-item"></span><input type="radio" aria-describedby="label_88"
+                class="form-radio validate[required]" id="input_88_1" name="q88_mailingAddress88" value="NO"
+                required="" /><label id="label_input_88_1" for="input_88_1">NO</label></span></div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-4 jf-required" data-type="control_radio" id="id_129"><label
+          class="form-label form-label-top" id="label_129" aria-hidden="false"> Applicant will accept invoices via
+          email<span class="form-required">*</span> </label>
+        <div id="cid_129" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_129" data-component="radio"><span
+              class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio"
+                aria-describedby="label_129" class="form-radio validate[required]" id="input_129_0"
+                name="q129_applicantWill" value="YES" required="" /><label id="label_input_129_0"
+                for="input_129_0">YES</label></span><span class="form-radio-item" style="clear:left"><span
+                class="dragger-item"></span><input type="radio" aria-describedby="label_129"
+                class="form-radio validate[required]" id="input_129_1" name="q129_applicantWill" value="NO"
+                required="" /><label id="label_input_129_1" for="input_129_1">NO</label></span></div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-5 always-hidden jf-required form-field-hidden"
+        style="display:none;" data-type="control_email" id="id_133"><label class="form-label form-label-top"
+          id="label_133" for="input_133" aria-hidden="false"> Email<span class="form-required">*</span> </label>
+        <div id="cid_133" class="form-input-wide always-hidden jf-required" data-layout="half"> <span
+            class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_133"
+              name="q133_email133" class="form-textbox validate[required, Email]" data-defaultvalue=""
+              autoComplete="section-input_133 email" style="width:310px" size="310" data-component="email"
+              aria-labelledby="label_133 sublabel_input_133" required="" value="" /><label class="form-sub-label"
+              for="input_133" id="sublabel_input_133" style="min-height:13px">example@example.com</label></span> </div>
+      </li>
+      <li class="form-line form-line-column form-col-6 jf-required" data-type="control_radio" id="id_130"><label
+          class="form-label form-label-top" id="label_130" aria-hidden="false"> Has Applicant and/or any individual with
+          an ownership interest filed for bankruptcy?<span class="form-required">*</span> </label>
+        <div id="cid_130" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_130" data-component="radio"><span
+              class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio"
+                aria-describedby="label_130" class="form-radio validate[required]" id="input_130_0"
+                name="q130_hasApplicant" value="YES" required="" /><label id="label_input_130_0"
+                for="input_130_0">YES</label></span><span class="form-radio-item" style="clear:left"><span
+                class="dragger-item"></span><input type="radio" aria-describedby="label_130"
+                class="form-radio validate[required]" id="input_130_1" name="q130_hasApplicant" value="NO"
+                required="" /><label id="label_input_130_1" for="input_130_1">NO</label></span></div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-7 jf-required" data-type="control_radio" id="id_131"><label
+          class="form-label form-label-top" id="label_131" aria-hidden="false"> Is there any pending or threatening
+          litigation against the Applicant and/or any Individual with ownership interest in the Applicant?<span
+            class="form-required">*</span> </label>
+        <div id="cid_131" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_131" data-component="radio"><span
+              class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio"
+                aria-describedby="label_131" class="form-radio validate[required]" id="input_131_0" name="q131_isThere"
+                value="YES" required="" /><label id="label_input_131_0" for="input_131_0">YES</label></span><span
+              class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio"
+                aria-describedby="label_131" class="form-radio validate[required]" id="input_131_1" name="q131_isThere"
+                value="NO" required="" /><label id="label_input_131_1" for="input_131_1">NO</label></span></div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-8 jf-required" data-type="control_radio" id="id_132"><label
+          class="form-label form-label-top" id="label_132" aria-hidden="false"> Are there any outstanding judgements
+          against the Applicant and/or any individual with ownership interest in the Applicant?<span
+            class="form-required">*</span> </label>
+        <div id="cid_132" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_132" data-component="radio"><span
+              class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio"
+                aria-describedby="label_132" class="form-radio validate[required]" id="input_132_0" name="q132_areThere"
+                value="YES" required="" /><label id="label_input_132_0" for="input_132_0">YES</label></span><span
+              class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio"
+                aria-describedby="label_132" class="form-radio validate[required]" id="input_132_1" name="q132_areThere"
+                value="NO" required="" /><label id="label_input_132_1" for="input_132_1">NO</label></span></div>
+        </div>
+      </li>
+      <li class="form-line always-hidden jf-required form-field-hidden" style="display:none;" data-type="control_widget"
+        id="id_76"><label class="form-label form-label-top form-label-auto" id="label_76" for="input_76"
+          aria-hidden="false"> Mailing Address<span class="form-required">*</span> </label>
+        <div id="cid_76" class="form-input-wide always-hidden jf-required" data-layout="full">
+          <div data-widget-name="Autocompleted Address" style="width:100%;text-align:Left;overflow-x:auto"
+            data-component="widget-field"><iframe data-client-id="537f577e93a6564a47000013"
+              title="Autocompleted Address" frameBorder="0" scrolling="no" allowtransparency="true"
+              allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe"
+              class="custom-field-frame" id="customFieldFrame_76" src=""
+              style="max-width:710px;border:none;width:100%;height:250px" data-width="710" data-height="250"></iframe>
+            <div class="widget-inputs-wrapper"><input type="hidden" id="input_76"
+                class="form-hidden form-widget widget-required " name="q76_mailingAddress" value="" /><input
+                type="hidden" id="widget_settings_76" class="form-hidden form-widget-settings"
+                value="%5B%7B%22name%22%3A%22fields%22%2C%22value%22%3A%22City%2CState%2CPostal%20code%2CHouse%20number%2CStreet%20name%22%7D%2C%7B%22name%22%3A%22route%22%2C%22value%22%3A%22Street%20name%22%7D%2C%7B%22name%22%3A%22streetNumber%22%2C%22value%22%3A%22House%20number%22%7D%2C%7B%22name%22%3A%22locality%22%2C%22value%22%3A%22City%22%7D%2C%7B%22name%22%3A%22administrativeAreaLevel1%22%2C%22value%22%3A%22State%22%7D%2C%7B%22name%22%3A%22postalCode%22%2C%22value%22%3A%22Postal%20code%22%7D%2C%7B%22name%22%3A%22country%22%2C%22value%22%3A%22Country%22%7D%2C%7B%22name%22%3A%22apiKey%22%2C%22value%22%3A%22AIzaSyB2dLOicHJgolKiUHivaqn3iR_qJgV8ark%22%7D%2C%7B%22name%22%3A%22customCSS%22%2C%22value%22%3A%22input%20%7B%5Cn%20%20%20%20%20height%3A%2040px%3B%5Cn%20%20%20%20%20width%3A%20310px%3B%5Cn%7D%5Cn%5Cn%5Cninput%5Btype%3Dtext%5D%20%20%7B%5Cn%20%20%20%20-moz-box-shadow%3A%20none%3B%5Cn%20%20%20%20-webkit-box-shadow%3A%20none%3B%5Cn%20%20%20%20%20box-shadow%3A%20none%3B%20%5Cnfont-size%3A%201em%3B%5Cn%7D%5Cn%5Cn%22%7D%5D"
+                data-version="2" /></div>
+            <script
+              type="text/javascript"> setTimeout(function () { var _cFieldFrame = document.getElementById("customFieldFrame_76"); if (_cFieldFrame) { _cFieldFrame.onload = function () { if (typeof widgetFrameLoaded !== 'undefined') { widgetFrameLoaded(76, { "formID": 233093970528058 }) } }; _cFieldFrame.src = "//app-widgets.jotform.io/autocompleteAddress/?qid=76&isOpenedInPortal=undefined&align=Left&ref=" + encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' + '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1); _cFieldFrame.addClassName("custom-field-frame-rendered") } }, 0); </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 always-hidden jf-required form-field-hidden"
+        style="display:none;" data-type="control_textbox" id="id_77"><label class="form-label form-label-top"
+          id="label_77" for="input_77" aria-hidden="false"> Mailing County<span class="form-required">*</span> </label>
+        <div id="cid_77" class="form-input-wide always-hidden jf-required" data-layout="half"> <input type="text"
+            id="input_77" name="q77_mailingCounty" data-type="input-textbox" class="form-textbox validate[required]"
+            data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_77"
+            required="" value="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_125">
+        <div id="cid_125" class="form-input-wide" data-layout="full">
+          <div id="text_125" class="form-html" data-component="text" tabindex="0">
+            <p style="text-align: center; background-color: #808080;"><span
+                style="color: #ffffff; background-color: #v; font-size: 14pt;">Owner / Officer Information</span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_fullname" id="id_70"><label
+          class="form-label form-label-top form-label-auto" id="label_70" for="first_70" aria-hidden="false"> Name of
+          Owner / Officer<span class="form-required">*</span> </label>
+        <div id="cid_70" class="form-input-wide jf-required" data-layout="full">
+          <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top"
+              data-input-type="first"><input type="text" id="first_70" name="q70_nameOf[first]"
+                class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_70 given-name"
+                size="10" data-component="first" aria-labelledby="label_70 sublabel_70_first" required=""
+                value="" /><label class="form-sub-label" for="first_70" id="sublabel_70_first"
+                style="min-height:13px">First Name</label></span><span class="form-sub-label-container"
+              style="vertical-align:top" data-input-type="last"><input type="text" id="last_70" name="q70_nameOf[last]"
+                class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_70 family-name"
+                size="15" data-component="last" aria-labelledby="label_70 sublabel_70_last" required=""
+                value="" /><label class="form-sub-label" for="last_70" id="sublabel_70_last"
+                style="min-height:13px">Last Name</label></span></div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_email" id="id_71"><label
+          class="form-label form-label-top" id="label_71" for="input_71" aria-hidden="false"> Email<span
+            class="form-required">*</span> </label>
+        <div id="cid_71" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container"
+            style="vertical-align:top"><input type="email" id="input_71" name="q71_email"
+              class="form-textbox validate[required, Email]" data-defaultvalue="" autoComplete="section-input_71 email"
+              style="width:310px" size="310" data-component="email" aria-labelledby="label_71 sublabel_input_71"
+              required="" value="" /><label class="form-sub-label" for="input_71" id="sublabel_input_71"
+              style="min-height:13px">example@example.com</label></span> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 jf-required" data-type="control_phone" id="id_126"><label
+          class="form-label form-label-top" id="label_126" for="input_126_full"> Phone Number<span
+            class="form-required">*</span> </label>
+        <div id="cid_126" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container"
+            style="vertical-align:top"><input type="tel" id="input_126_full" name="q126_phoneNumber126[full]"
+              data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]"
+              data-defaultvalue="" autoComplete="section-input_126 tel-national" style="width:310px" data-masked="true"
+              placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_126 sublabel_126_masked"
+              required="" value="" /><label class="form-sub-label" for="input_126_full" id="sublabel_126_masked"
+              style="min-height:13px">Please enter a valid phone number.</label></span> </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_128">
+        <div id="cid_128" class="form-input-wide" data-layout="full">
+          <div id="text_128" class="form-html" data-component="text" tabindex="0">
+            <p style="text-align: center; background-color: #808080;"><span
+                style="color: #ffffff; background-color: #v; font-size: 14pt;">Product(s) Information</span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_widget" id="id_80"><label
+          class="form-label form-label-top" id="label_80" for="input_80" aria-hidden="false"> Product(s) Requested<span
+            class="form-required">*</span> </label>
+        <div id="cid_80" class="form-input-wide jf-required" data-layout="full">
+          <div data-widget-name="Multiple Selection" style="width:100%;text-align:Left;overflow-x:auto"
+            data-component="widget-field"><iframe data-client-id="5293157eb5ac485477000004" title="Multiple Selection"
+              frameBorder="0" scrolling="no" allowtransparency="true"
+              allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe"
+              class="custom-field-frame" id="customFieldFrame_80" src=""
+              style="max-width:300px;border:none;width:100%;height:45px" data-width="300" data-height="45"></iframe>
+            <div class="widget-inputs-wrapper"><input type="hidden" id="input_80"
+                class="form-hidden form-widget widget-required " name="q80_typeA80" value="" /><input type="hidden"
+                id="widget_settings_80" class="form-hidden form-widget-settings"
+                value="%5B%7B%22name%22%3A%22options%22%2C%22value%22%3A%22%232%20Oil%2C%20%5Cn%234%20Oil%2C%20%5CnRegular%20Gasoline%2C%20%5CnMid-grade%20Gasoline%2C%20%5CnSuper%20Gasoline%2C%20%5CnDiesel%2C%20%5CnDyed%20Diesel%2C%20%22%7D%2C%7B%22name%22%3A%22placeholder%22%2C%22value%22%3A%22Select%20items%22%7D%2C%7B%22name%22%3A%22customCSS%22%2C%22value%22%3A%22input%20%7B%5Cn%20%20%20%20%20height%3A%2020px%3B%5Cn%20%20%20%20%20width%3A%20310px%3B%5Cn%7D%5Cn%5Cn%5Cninput%5Btype%3Dbutton%5D%2C%20input%5Btype%3Dtel%5D%2C%20select%2C%20textarea%20%7B%5Cn%20%20%20%20-moz-box-shadow%3A%20none%3B%5Cn%20%20%20%20-webkit-box-shadow%3A%20none%3B%5Cn%20%20%20%20%20box-shadow%3A%20none%3B%20%5Cnfont-size%3A%201.1em%3B%5Cn%7D%5Cn%5Cn%22%7D%5D"
+                data-version="2" /></div>
+            <script
+              type="text/javascript"> setTimeout(function () { var _cFieldFrame = document.getElementById("customFieldFrame_80"); if (_cFieldFrame) { _cFieldFrame.onload = function () { if (typeof widgetFrameLoaded !== 'undefined') { widgetFrameLoaded(80, { "formID": 233093970528058 }) } }; _cFieldFrame.src = "//app-widgets.jotform.io/multipleSelection/?qid=80&isOpenedInPortal=undefined&align=Left&ref=" + encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' + '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1); _cFieldFrame.addClassName("custom-field-frame-rendered") } }, 0); </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 jf-required" data-type="control_widget" id="id_82"><label
+          class="form-label form-label-top" id="label_82" for="input_82" aria-hidden="false"> Estimated Annual Volume
+          (GAL)<span class="form-required">*</span> </label>
+        <div id="cid_82" class="form-input-wide jf-required" data-layout="full">
+          <div data-widget-name="Masked Input" style="width:100%;text-align:Left;overflow-x:auto"
+            data-component="widget-field"><iframe data-client-id="53831901bbbeaf3d0300000e" title="Masked Input"
+              frameBorder="0" scrolling="no" allowtransparency="true"
+              allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe"
+              class="custom-field-frame" id="customFieldFrame_82" src=""
+              style="max-width:300px;border:none;width:100%;height:40px" data-width="300" data-height="40"></iframe>
+            <div class="widget-inputs-wrapper"><input type="hidden" id="input_82"
+                class="form-hidden form-widget widget-required " name="q82_typeA82" value="" /><input type="hidden"
+                id="widget_settings_82" class="form-hidden form-widget-settings"
+                value="%5B%7B%22name%22%3A%22precision%22%2C%22value%22%3A%220%22%7D%2C%7B%22name%22%3A%22delimiter%22%2C%22value%22%3A%22%2C%22%7D%2C%7B%22name%22%3A%22convertToInt%22%2C%22value%22%3A%22Yes%22%7D%2C%7B%22name%22%3A%22suffixUnit%22%2C%22value%22%3A%22GAL%22%7D%2C%7B%22name%22%3A%22hide%22%2C%22value%22%3A%22No%22%7D%2C%7B%22name%22%3A%22customCSS%22%2C%22value%22%3A%22input%20%7B%5Cn%20%20%20%20%20height%3A%2040px%3B%5Cn%20%20%20%20%20width%3A%20310px%3B%5Cn%7D%5Cn%5Cn%5Cninput%5Btype%3Dbutton%5D%2C%20input%5Btype%3Dtel%5D%2C%20select%2C%20textarea%20%7B%5Cn%20%20%20%20-moz-box-shadow%3A%20none%3B%5Cn%20%20%20%20-webkit-box-shadow%3A%20none%3B%5Cn%20%20%20%20%20box-shadow%3A%20none%3B%20%5Cnfont-size%3A%201.1em%3B%5Cn%7D%5Cn%5Cn%22%7D%5D"
+                data-version="2" /></div>
+            <script
+              type="text/javascript"> setTimeout(function () { var _cFieldFrame = document.getElementById("customFieldFrame_82"); if (_cFieldFrame) { _cFieldFrame.onload = function () { if (typeof widgetFrameLoaded !== 'undefined') { widgetFrameLoaded(82, { "formID": 233093970528058 }) } }; _cFieldFrame.src = "//widgets.jotform.io/maskedInput/?qid=82&isOpenedInPortal=undefined&align=Left&ref=" + encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' + '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1); _cFieldFrame.addClassName("custom-field-frame-rendered") } }, 0); </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-3 jf-required" data-type="control_widget" id="id_84"><label
+          class="form-label form-label-top" id="label_84" for="input_84" aria-hidden="false"> Credit line Requested<span
+            class="form-required">*</span> </label>
+        <div id="cid_84" class="form-input-wide jf-required" data-layout="full">
+          <div data-widget-name="Masked Input" style="width:100%;text-align:Left;overflow-x:auto"
+            data-component="widget-field"><iframe data-client-id="53831901bbbeaf3d0300000e" title="Masked Input"
+              frameBorder="0" scrolling="no" allowtransparency="true"
+              allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe"
+              class="custom-field-frame" id="customFieldFrame_84" src=""
+              style="max-width:300px;border:none;width:100%;height:40px" data-width="300" data-height="40"></iframe>
+            <div class="widget-inputs-wrapper"><input type="hidden" id="input_84"
+                class="form-hidden form-widget widget-required " name="q84_creditLine" value="" /><input type="hidden"
+                id="widget_settings_84" class="form-hidden form-widget-settings"
+                value="%5B%7B%22name%22%3A%22precision%22%2C%22value%22%3A%220%22%7D%2C%7B%22name%22%3A%22delimiter%22%2C%22value%22%3A%22%2C%22%7D%2C%7B%22name%22%3A%22convertToInt%22%2C%22value%22%3A%22Yes%22%7D%2C%7B%22name%22%3A%22unit%22%2C%22value%22%3A%22%24%22%7D%2C%7B%22name%22%3A%22hide%22%2C%22value%22%3A%22No%22%7D%2C%7B%22name%22%3A%22customCSS%22%2C%22value%22%3A%22input%20%7B%5Cn%20%20%20%20%20height%3A%2040px%3B%5Cn%20%20%20%20%20width%3A%20310px%3B%5Cn%7D%5Cn%5Cn%5Cninput%5Btype%3Dbutton%5D%2C%20input%5Btype%3Dtel%5D%2C%20select%2C%20textarea%20%7B%5Cn%20%20%20%20-moz-box-shadow%3A%20none%3B%5Cn%20%20%20%20-webkit-box-shadow%3A%20none%3B%5Cn%20%20%20%20%20box-shadow%3A%20none%3B%20%5Cnfont-size%3A%201.1em%3B%5Cn%7D%5Cn%5Cn%22%7D%5D"
+                data-version="2" /></div>
+            <script
+              type="text/javascript"> setTimeout(function () { var _cFieldFrame = document.getElementById("customFieldFrame_84"); if (_cFieldFrame) { _cFieldFrame.onload = function () { if (typeof widgetFrameLoaded !== 'undefined') { widgetFrameLoaded(84, { "formID": 233093970528058 }) } }; _cFieldFrame.src = "//widgets.jotform.io/maskedInput/?qid=84&isOpenedInPortal=undefined&align=Left&ref=" + encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' + '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1); _cFieldFrame.addClassName("custom-field-frame-rendered") } }, 0); </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-4 jf-required" data-type="control_radio" id="id_87"><label
+          class="form-label form-label-top" id="label_87" aria-hidden="false"> Financial Statements?<span
+            class="form-required">*</span> </label>
+        <div id="cid_87" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_87" data-component="radio"><span
+              class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio"
+                aria-describedby="label_87" class="form-radio validate[required]" id="input_87_0"
+                name="q87_financialStatements87" value="YES" required="" /><label id="label_input_87_0"
+                for="input_87_0">YES</label></span><span class="form-radio-item" style="clear:left"><span
+                class="dragger-item"></span><input type="radio" aria-describedby="label_87"
+                class="form-radio validate[required]" id="input_87_1" name="q87_financialStatements87" value="NO"
+                required="" /><label id="label_input_87_1" for="input_87_1">NO</label></span></div>
+        </div>
+      </li>
+      <li class="form-line always-hidden jf-required form-field-hidden" style="display:none;"
+        data-type="control_fileupload" id="id_150"><label class="form-label form-label-top form-label-auto"
+          id="label_150" for="input_150" aria-hidden="false"> Financial Statements Upload<span
+            class="form-required">*</span> </label>
+        <div id="cid_150" class="form-input-wide always-hidden jf-required" data-layout="full">
+          <div class="jfQuestion-fields" data-wrapper-react="true">
+            <div class="jfField isFilled">
+              <div class="jfUpload-wrapper">
+                <div class="jfUpload-container">
+                  <div class="jfUpload-button-container">
+                    <div class="jfUpload-button" aria-hidden="true" tabindex="0" style="display:none" data-version="v2">
+                      Browse Files<div class="jfUpload-heading forDesktop">Drag and drop files here</div>
+                      <div class="jfUpload-heading forMobile">Choose a file</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="jfUpload-files-container">
+                  <div class="validate[multipleUpload]"><input type="file" id="input_150"
+                      name="q150_financialStatements[]" multiple="" class="form-upload-multiple validate[required]"
+                      data-imagevalidate="yes"
+                      data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif"
+                      data-limit-file-size="Yes" data-file-maxsize="10854" data-file-minsize="0" data-file-limit=""
+                      data-component="fileupload" required="" aria-label="Browse Files" /></div>
+                </div>
+              </div>
+              <div data-wrapper-react="true"></div>
+            </div><span style="display:none" class="cancelText">Cancel</span><span style="display:none"
+              class="ofText">of</span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_98">
+        <div id="cid_98" class="form-input-wide" data-layout="full">
+          <div id="text_98" class="form-html" data-component="text" tabindex="0">
+            <p style="text-align: center; background-color: #808080;"><span
+                style="color: #ffffff; background-color: #v; font-size: 14pt;">Bank Reference</span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_textbox" id="id_89"><label
+          class="form-label form-label-top" id="label_89" for="input_89" aria-hidden="false"> Name of Bank<span
+            class="form-required">*</span> </label>
+        <div id="cid_89" class="form-input-wide jf-required" data-layout="half"> <input type="text" id="input_89"
+            name="q89_nameOf89" data-type="input-textbox" class="form-textbox validate[required]" data-defaultvalue=""
+            style="width:310px" size="310" data-component="textbox" aria-labelledby="label_89" required="" value="" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_widget" id="id_144"><label class="form-label form-label-top"
+          id="label_144" for="input_144" aria-hidden="false"> Bank Address<span class="form-required">*</span> </label>
+        <div id="cid_144" class="form-input-wide jf-required" data-layout="full">
+          <div data-widget-name="Autocompleted Address" style="width:100%;text-align:Left;overflow-x:auto"
+            data-component="widget-field"><iframe data-client-id="537f577e93a6564a47000013"
+              title="Autocompleted Address" frameBorder="0" scrolling="no" allowtransparency="true"
+              allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe"
+              class="custom-field-frame" id="customFieldFrame_144" src=""
+              style="max-width:710px;border:none;width:100%;height:120px" data-width="710" data-height="120"></iframe>
+            <div class="widget-inputs-wrapper"><input type="hidden" id="input_144"
+                class="form-hidden form-widget widget-required " name="q144_bankAddress144" value="" /><input
+                type="hidden" id="widget_settings_144" class="form-hidden form-widget-settings"
+                value="%5B%7B%22name%22%3A%22fields%22%2C%22value%22%3A%22City%2CState%22%7D%2C%7B%22name%22%3A%22route%22%2C%22value%22%3A%22Street%20name%22%7D%2C%7B%22name%22%3A%22streetNumber%22%2C%22value%22%3A%22House%20number%22%7D%2C%7B%22name%22%3A%22locality%22%2C%22value%22%3A%22City%22%7D%2C%7B%22name%22%3A%22administrativeAreaLevel1%22%2C%22value%22%3A%22State%22%7D%2C%7B%22name%22%3A%22postalCode%22%2C%22value%22%3A%22Postal%20code%22%7D%2C%7B%22name%22%3A%22country%22%2C%22value%22%3A%22Country%22%7D%2C%7B%22name%22%3A%22apiKey%22%2C%22value%22%3A%22AIzaSyB2dLOicHJgolKiUHivaqn3iR_qJgV8ark%22%7D%2C%7B%22name%22%3A%22customCSS%22%2C%22value%22%3A%22input%20%7B%5Cr%5Cn%20%20%20%20%20height%3A%2040px%3B%5Cr%5Cn%20%20%20%20%20width%3A%20310px%3B%5Cr%5Cn%7D%5Cr%5Cn%5Cr%5Cn%5Cr%5Cninput%5Btype%3Dtext%5D%20%20%7B%5Cr%5Cn%20%20%20%20-moz-box-shadow%3A%20none%3B%5Cr%5Cn%20%20%20%20-webkit-box-shadow%3A%20none%3B%5Cr%5Cn%20%20%20%20%20box-shadow%3A%20none%3B%20%5Cr%5Cnfont-size%3A%201em%3B%5Cr%5Cn%7D%5Cr%5Cn%5Cr%5Cn%22%7D%5D"
+                data-version="2" /></div>
+            <script
+              type="text/javascript"> setTimeout(function () { var _cFieldFrame = document.getElementById("customFieldFrame_144"); if (_cFieldFrame) { _cFieldFrame.onload = function () { if (typeof widgetFrameLoaded !== 'undefined') { widgetFrameLoaded(144, { "formID": 233093970528058 }) } }; _cFieldFrame.src = "//app-widgets.jotform.io/autocompleteAddress/?qid=144&isOpenedInPortal=undefined&align=Left&ref=" + encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' + '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1); _cFieldFrame.addClassName("custom-field-frame-rendered") } }, 0); </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_fullname" id="id_93"><label
+          class="form-label form-label-top" id="label_93" for="first_93" aria-hidden="false"> Bank Contact Name<span
+            class="form-required">*</span> </label>
+        <div id="cid_93" class="form-input-wide jf-required" data-layout="full">
+          <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top"
+              data-input-type="first"><input type="text" id="first_93" name="q93_bankContact[first]"
+                class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_93 given-name"
+                size="10" data-component="first" aria-labelledby="label_93 sublabel_93_first" required=""
+                value="" /><label class="form-sub-label" for="first_93" id="sublabel_93_first"
+                style="min-height:13px">First Name</label></span><span class="form-sub-label-container"
+              style="vertical-align:top" data-input-type="last"><input type="text" id="last_93"
+                name="q93_bankContact[last]" class="form-textbox validate[required]" data-defaultvalue=""
+                autoComplete="section-input_93 family-name" size="15" data-component="last"
+                aria-labelledby="label_93 sublabel_93_last" required="" value="" /><label class="form-sub-label"
+                for="last_93" id="sublabel_93_last" style="min-height:13px">Last Name</label></span></div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 jf-required" data-type="control_email" id="id_94"><label
+          class="form-label form-label-top" id="label_94" for="input_94" aria-hidden="false"> Bank Contact Email<span
+            class="form-required">*</span> </label>
+        <div id="cid_94" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container"
+            style="vertical-align:top"><input type="email" id="input_94" name="q94_bankContact94"
+              class="form-textbox validate[required, Email]" data-defaultvalue="" autoComplete="section-input_94 email"
+              style="width:310px" size="310" data-component="email" aria-labelledby="label_94 sublabel_input_94"
+              required="" value="" /><label class="form-sub-label" for="input_94" id="sublabel_input_94"
+              style="min-height:13px">example@example.com</label></span> </div>
+      </li>
+      <li class="form-line form-line-column form-col-3 jf-required" data-type="control_phone" id="id_95"><label
+          class="form-label form-label-top" id="label_95" for="input_95_full"> Bank Phone Number<span
+            class="form-required">*</span> </label>
+        <div id="cid_95" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container"
+            style="vertical-align:top"><input type="tel" id="input_95_full" name="q95_bankPhone[full]"
+              data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]"
+              data-defaultvalue="" autoComplete="section-input_95 tel-national" style="width:310px" data-masked="true"
+              placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_95 sublabel_95_masked"
+              required="" value="" /><label class="form-sub-label" for="input_95_full" id="sublabel_95_masked"
+              style="min-height:13px">Please enter a valid phone number.</label></span> </div>
+      </li>
+      <li class="form-line form-line-column form-col-4 jf-required" data-type="control_textbox" id="id_96"><label
+          class="form-label form-label-top" id="label_96" for="input_96" aria-hidden="false"> Account Number<span
+            class="form-required">*</span> </label>
+        <div id="cid_96" class="form-input-wide jf-required" data-layout="half"> <input type="text" id="input_96"
+            name="q96_accountNumber" data-type="input-textbox" class="form-textbox validate[required]"
+            data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_96"
+            required="" value="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_101">
+        <div id="cid_101" class="form-input-wide" data-layout="full">
+          <div id="text_101" class="form-html" data-component="text" tabindex="0">
+            <p style="text-align: center; background-color: #808080;"><span
+                style="color: #ffffff; background-color: #v; font-size: 14pt;">Trade References</span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_textbox" id="id_100"><label
+          class="form-label form-label-top" id="label_100" for="input_100" aria-hidden="false"> Company Name<span
+            class="form-required">*</span> </label>
+        <div id="cid_100" class="form-input-wide jf-required" data-layout="half"> <input type="text" id="input_100"
+            name="q100_companyName" data-type="input-textbox" class="form-textbox validate[required]"
+            data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_100"
+            required="" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 jf-required" data-type="control_fullname" id="id_97"><label
+          class="form-label form-label-top" id="label_97" for="first_97" aria-hidden="false"> Contact Name<span
+            class="form-required">*</span> </label>
+        <div id="cid_97" class="form-input-wide jf-required" data-layout="full">
+          <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top"
+              data-input-type="first"><input type="text" id="first_97" name="q97_contactName[first]"
+                class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_97 given-name"
+                size="10" data-component="first" aria-labelledby="label_97 sublabel_97_first" required=""
+                value="" /><label class="form-sub-label" for="first_97" id="sublabel_97_first"
+                style="min-height:13px">First Name</label></span><span class="form-sub-label-container"
+              style="vertical-align:top" data-input-type="last"><input type="text" id="last_97"
+                name="q97_contactName[last]" class="form-textbox validate[required]" data-defaultvalue=""
+                autoComplete="section-input_97 family-name" size="15" data-component="last"
+                aria-labelledby="label_97 sublabel_97_last" required="" value="" /><label class="form-sub-label"
+                for="last_97" id="sublabel_97_last" style="min-height:13px">Last Name</label></span></div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-3 jf-required" data-type="control_email" id="id_102"><label
+          class="form-label form-label-top" id="label_102" for="input_102" aria-hidden="false"> Email<span
+            class="form-required">*</span> </label>
+        <div id="cid_102" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container"
+            style="vertical-align:top"><input type="email" id="input_102" name="q102_email102"
+              class="form-textbox validate[required, Email]" data-defaultvalue="" autoComplete="section-input_102 email"
+              style="width:310px" size="310" data-component="email" aria-labelledby="label_102 sublabel_input_102"
+              required="" value="" /><label class="form-sub-label" for="input_102" id="sublabel_input_102"
+              style="min-height:13px">example@example.com</label></span> </div>
+      </li>
+      <li class="form-line form-line-column form-col-4 jf-required" data-type="control_phone" id="id_103"><label
+          class="form-label form-label-top" id="label_103" for="input_103_full"> Phone Number<span
+            class="form-required">*</span> </label>
+        <div id="cid_103" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container"
+            style="vertical-align:top"><input type="tel" id="input_103_full" name="q103_phoneNumber103[full]"
+              data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]"
+              data-defaultvalue="" autoComplete="section-input_103 tel-national" style="width:310px" data-masked="true"
+              placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_103 sublabel_103_masked"
+              required="" value="" /><label class="form-sub-label" for="input_103_full" id="sublabel_103_masked"
+              style="min-height:13px">Please enter a valid phone number.</label></span> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_widget" id="id_106"><label
+          class="form-label form-label-top form-label-auto" id="label_106" for="input_106" aria-hidden="false"> Company
+          Address<span class="form-required">*</span> </label>
+        <div id="cid_106" class="form-input-wide jf-required" data-layout="full">
+          <div data-widget-name="Autocompleted Address" style="width:100%;text-align:Left;overflow-x:auto"
+            data-component="widget-field"><iframe data-client-id="537f577e93a6564a47000013"
+              title="Autocompleted Address" frameBorder="0" scrolling="no" allowtransparency="true"
+              allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe"
+              class="custom-field-frame" id="customFieldFrame_106" src=""
+              style="max-width:710px;border:none;width:100%;height:180px" data-width="710" data-height="180"></iframe>
+            <div class="widget-inputs-wrapper"><input type="hidden" id="input_106"
+                class="form-hidden form-widget widget-required " name="q106_companyAddress" value="" /><input
+                type="hidden" id="widget_settings_106" class="form-hidden form-widget-settings"
+                value="%5B%7B%22name%22%3A%22fields%22%2C%22value%22%3A%22City%2CState%2CHouse%20number%2CStreet%20name%22%7D%2C%7B%22name%22%3A%22route%22%2C%22value%22%3A%22Street%20name%22%7D%2C%7B%22name%22%3A%22streetNumber%22%2C%22value%22%3A%22House%20number%22%7D%2C%7B%22name%22%3A%22locality%22%2C%22value%22%3A%22City%22%7D%2C%7B%22name%22%3A%22administrativeAreaLevel1%22%2C%22value%22%3A%22State%22%7D%2C%7B%22name%22%3A%22postalCode%22%2C%22value%22%3A%22Postal%20code%22%7D%2C%7B%22name%22%3A%22country%22%2C%22value%22%3A%22Country%22%7D%2C%7B%22name%22%3A%22apiKey%22%2C%22value%22%3A%22AIzaSyB2dLOicHJgolKiUHivaqn3iR_qJgV8ark%22%7D%2C%7B%22name%22%3A%22customCSS%22%2C%22value%22%3A%22input%20%7B%5Cn%20%20%20%20%20height%3A%2040px%3B%5Cn%20%20%20%20%20width%3A%20310px%3B%5Cn%7D%5Cn%5Cn%5Cninput%5Btype%3Dtext%5D%20%20%7B%5Cn%20%20%20%20-moz-box-shadow%3A%20none%3B%5Cn%20%20%20%20-webkit-box-shadow%3A%20none%3B%5Cn%20%20%20%20%20box-shadow%3A%20none%3B%20%5Cnfont-size%3A%201em%3B%5Cn%7D%5Cn%5Cn%22%7D%5D"
+                data-version="2" /></div>
+            <script
+              type="text/javascript"> setTimeout(function () { var _cFieldFrame = document.getElementById("customFieldFrame_106"); if (_cFieldFrame) { _cFieldFrame.onload = function () { if (typeof widgetFrameLoaded !== 'undefined') { widgetFrameLoaded(106, { "formID": 233093970528058 }) } }; _cFieldFrame.src = "//app-widgets.jotform.io/autocompleteAddress/?qid=106&isOpenedInPortal=undefined&align=Left&ref=" + encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' + '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1); _cFieldFrame.addClassName("custom-field-frame-rendered") } }, 0); </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_107">
+        <div id="cid_107" class="form-input-wide" data-layout="full">
+          <div class="divider" data-component="divider"
+            style="border-bottom-width:1px;border-bottom-style:solid;border-color:#e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px">
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_textbox" id="id_108"><label
+          class="form-label form-label-top" id="label_108" for="input_108" aria-hidden="false"> Company Name<span
+            class="form-required">*</span> </label>
+        <div id="cid_108" class="form-input-wide jf-required" data-layout="half"> <input type="text" id="input_108"
+            name="q108_companyName108" data-type="input-textbox" class="form-textbox validate[required]"
+            data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_108"
+            required="" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 jf-required" data-type="control_fullname" id="id_109"><label
+          class="form-label form-label-top" id="label_109" for="first_109" aria-hidden="false"> Contact Name<span
+            class="form-required">*</span> </label>
+        <div id="cid_109" class="form-input-wide jf-required" data-layout="full">
+          <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top"
+              data-input-type="first"><input type="text" id="first_109" name="q109_contactName109[first]"
+                class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_109 given-name"
+                size="10" data-component="first" aria-labelledby="label_109 sublabel_109_first" required=""
+                value="" /><label class="form-sub-label" for="first_109" id="sublabel_109_first"
+                style="min-height:13px">First Name</label></span><span class="form-sub-label-container"
+              style="vertical-align:top" data-input-type="last"><input type="text" id="last_109"
+                name="q109_contactName109[last]" class="form-textbox validate[required]" data-defaultvalue=""
+                autoComplete="section-input_109 family-name" size="15" data-component="last"
+                aria-labelledby="label_109 sublabel_109_last" required="" value="" /><label class="form-sub-label"
+                for="last_109" id="sublabel_109_last" style="min-height:13px">Last Name</label></span></div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-3 jf-required" data-type="control_email" id="id_110"><label
+          class="form-label form-label-top" id="label_110" for="input_110" aria-hidden="false"> Email<span
+            class="form-required">*</span> </label>
+        <div id="cid_110" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container"
+            style="vertical-align:top"><input type="email" id="input_110" name="q110_email110"
+              class="form-textbox validate[required, Email]" data-defaultvalue="" autoComplete="section-input_110 email"
+              style="width:310px" size="310" data-component="email" aria-labelledby="label_110 sublabel_input_110"
+              required="" value="" /><label class="form-sub-label" for="input_110" id="sublabel_input_110"
+              style="min-height:13px">example@example.com</label></span> </div>
+      </li>
+      <li class="form-line form-line-column form-col-4 jf-required" data-type="control_phone" id="id_111"><label
+          class="form-label form-label-top" id="label_111" for="input_111_full"> Phone Number<span
+            class="form-required">*</span> </label>
+        <div id="cid_111" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container"
+            style="vertical-align:top"><input type="tel" id="input_111_full" name="q111_phoneNumber111[full]"
+              data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]"
+              data-defaultvalue="" autoComplete="section-input_111 tel-national" style="width:310px" data-masked="true"
+              placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_111 sublabel_111_masked"
+              required="" value="" /><label class="form-sub-label" for="input_111_full" id="sublabel_111_masked"
+              style="min-height:13px">Please enter a valid phone number.</label></span> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_widget" id="id_112"><label
+          class="form-label form-label-top form-label-auto" id="label_112" for="input_112" aria-hidden="false"> Company
+          Address<span class="form-required">*</span> </label>
+        <div id="cid_112" class="form-input-wide jf-required" data-layout="full">
+          <div data-widget-name="Autocompleted Address" style="width:100%;text-align:Left;overflow-x:auto"
+            data-component="widget-field"><iframe data-client-id="537f577e93a6564a47000013"
+              title="Autocompleted Address" frameBorder="0" scrolling="no" allowtransparency="true"
+              allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe"
+              class="custom-field-frame" id="customFieldFrame_112" src=""
+              style="max-width:710px;border:none;width:100%;height:180px" data-width="710" data-height="180"></iframe>
+            <div class="widget-inputs-wrapper"><input type="hidden" id="input_112"
+                class="form-hidden form-widget widget-required " name="q112_companyAddress112" value="" /><input
+                type="hidden" id="widget_settings_112" class="form-hidden form-widget-settings"
+                value="%5B%7B%22name%22%3A%22fields%22%2C%22value%22%3A%22City%2CState%2CHouse%20number%2CStreet%20name%22%7D%2C%7B%22name%22%3A%22route%22%2C%22value%22%3A%22Street%20name%22%7D%2C%7B%22name%22%3A%22streetNumber%22%2C%22value%22%3A%22House%20number%22%7D%2C%7B%22name%22%3A%22locality%22%2C%22value%22%3A%22City%22%7D%2C%7B%22name%22%3A%22administrativeAreaLevel1%22%2C%22value%22%3A%22State%22%7D%2C%7B%22name%22%3A%22postalCode%22%2C%22value%22%3A%22Postal%20code%22%7D%2C%7B%22name%22%3A%22country%22%2C%22value%22%3A%22Country%22%7D%2C%7B%22name%22%3A%22apiKey%22%2C%22value%22%3A%22AIzaSyB2dLOicHJgolKiUHivaqn3iR_qJgV8ark%22%7D%2C%7B%22name%22%3A%22customCSS%22%2C%22value%22%3A%22input%20%7B%5Cr%5Cn%20%20%20%20%20height%3A%2040px%3B%5Cr%5Cn%20%20%20%20%20width%3A%20310px%3B%5Cr%5Cn%7D%5Cr%5Cn%5Cr%5Cn%5Cr%5Cninput%5Btype%3Dtext%5D%20%20%7B%5Cr%5Cn%20%20%20%20-moz-box-shadow%3A%20none%3B%5Cr%5Cn%20%20%20%20-webkit-box-shadow%3A%20none%3B%5Cr%5Cn%20%20%20%20%20box-shadow%3A%20none%3B%20%5Cr%5Cnfont-size%3A%201em%3B%5Cr%5Cn%7D%5Cr%5Cn%5Cr%5Cn%22%7D%5D"
+                data-version="2" /></div>
+            <script
+              type="text/javascript"> setTimeout(function () { var _cFieldFrame = document.getElementById("customFieldFrame_112"); if (_cFieldFrame) { _cFieldFrame.onload = function () { if (typeof widgetFrameLoaded !== 'undefined') { widgetFrameLoaded(112, { "formID": 233093970528058 }) } }; _cFieldFrame.src = "//app-widgets.jotform.io/autocompleteAddress/?qid=112&isOpenedInPortal=undefined&align=Left&ref=" + encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' + '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1); _cFieldFrame.addClassName("custom-field-frame-rendered") } }, 0); </script>
+          </div>
+        </div>
+      </li>
+      <ul class="form-section-closed" style="height: 84px;clear:both;" id="section_123">
+        <li id="cid_123" class="form-input-wide" data-type="control_collapse">
+          <div class="form-collapse-table" id="collapse_123" data-component="collapse"><span class="form-collapse-mid"
+              id="collapse-text_123">Additional Trade Reference</span><span
+              class="form-collapse-right form-collapse-right-hide"> </span></div>
+        </li>
+        <li class="form-line" data-type="control_divider" id="id_115">
+          <div id="cid_115" class="form-input-wide" data-layout="full">
+            <div class="divider" data-component="divider"
+              style="border-bottom-width:1px;border-bottom-style:solid;border-color:#e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px">
+            </div>
+          </div>
+        </li>
+        <li class="form-line form-line-column form-col-1" data-type="control_textbox" id="id_118"><label
+            class="form-label form-label-top" id="label_118" for="input_118" aria-hidden="false"> Company Name </label>
+          <div id="cid_118" class="form-input-wide" data-layout="half"> <input type="text" id="input_118"
+              name="q118_companyName118" data-type="input-textbox" class="form-textbox" data-defaultvalue=""
+              style="width:310px" size="310" data-component="textbox" aria-labelledby="label_118" value="" /> </div>
+        </li>
+        <li class="form-line form-line-column form-col-2" data-type="control_fullname" id="id_119"><label
+            class="form-label form-label-top" id="label_119" for="first_119" aria-hidden="false"> Contact Name </label>
+          <div id="cid_119" class="form-input-wide" data-layout="full">
+            <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top"
+                data-input-type="first"><input type="text" id="first_119" name="q119_contactName119[first]"
+                  class="form-textbox" data-defaultvalue="" autoComplete="section-input_119 given-name" size="10"
+                  data-component="first" aria-labelledby="label_119 sublabel_119_first" value="" /><label
+                  class="form-sub-label" for="first_119" id="sublabel_119_first" style="min-height:13px">First
+                  Name</label></span><span class="form-sub-label-container" style="vertical-align:top"
+                data-input-type="last"><input type="text" id="last_119" name="q119_contactName119[last]"
+                  class="form-textbox" data-defaultvalue="" autoComplete="section-input_119 family-name" size="15"
+                  data-component="last" aria-labelledby="label_119 sublabel_119_last" value="" /><label
+                  class="form-sub-label" for="last_119" id="sublabel_119_last" style="min-height:13px">Last
+                  Name</label></span></div>
+          </div>
+        </li>
+        <li class="form-line form-line-column form-col-3" data-type="control_email" id="id_120"><label
+            class="form-label form-label-top" id="label_120" for="input_120" aria-hidden="false"> Email </label>
+          <div id="cid_120" class="form-input-wide" data-layout="half"> <span class="form-sub-label-container"
+              style="vertical-align:top"><input type="email" id="input_120" name="q120_email120"
+                class="form-textbox validate[Email]" data-defaultvalue="" autoComplete="section-input_120 email"
+                style="width:310px" size="310" data-component="email" aria-labelledby="label_120 sublabel_input_120"
+                value="" /><label class="form-sub-label" for="input_120" id="sublabel_input_120"
+                style="min-height:13px">example@example.com</label></span> </div>
+        </li>
+        <li class="form-line form-line-column form-col-4" data-type="control_phone" id="id_121"><label
+            class="form-label form-label-top" id="label_121" for="input_121_full"> Phone Number </label>
+          <div id="cid_121" class="form-input-wide" data-layout="half"> <span class="form-sub-label-container"
+              style="vertical-align:top"><input type="tel" id="input_121_full" name="q121_phoneNumber121[full]"
+                data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue=""
+                autoComplete="section-input_121 tel-national" style="width:310px" data-masked="true"
+                placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_121 sublabel_121_masked"
+                value="" /><label class="form-sub-label" for="input_121_full" id="sublabel_121_masked"
+                style="min-height:13px">Please enter a valid phone number.</label></span> </div>
+        </li>
+        <li class="form-line" data-type="control_widget" id="id_122"><label
+            class="form-label form-label-top form-label-auto" id="label_122" for="input_122" aria-hidden="false">
+            Company Address </label>
+          <div id="cid_122" class="form-input-wide" data-layout="full">
+            <div data-widget-name="Autocompleted Address" style="width:100%;text-align:Left;overflow-x:auto"
+              data-component="widget-field"><iframe data-client-id="537f577e93a6564a47000013"
+                title="Autocompleted Address" frameBorder="0" scrolling="no" allowtransparency="true"
+                allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe"
+                class="custom-field-frame" id="customFieldFrame_122" src=""
+                style="max-width:710px;border:none;width:100%;height:180px" data-width="710" data-height="180"></iframe>
+              <div class="widget-inputs-wrapper"><input type="hidden" id="input_122" class="form-hidden form-widget "
+                  name="q122_companyAddress122" value="" /><input type="hidden" id="widget_settings_122"
+                  class="form-hidden form-widget-settings"
+                  value="%5B%7B%22name%22%3A%22fields%22%2C%22value%22%3A%22City%2CState%2CHouse%20number%2CStreet%20name%22%7D%2C%7B%22name%22%3A%22route%22%2C%22value%22%3A%22Street%20name%22%7D%2C%7B%22name%22%3A%22streetNumber%22%2C%22value%22%3A%22House%20number%22%7D%2C%7B%22name%22%3A%22locality%22%2C%22value%22%3A%22City%22%7D%2C%7B%22name%22%3A%22administrativeAreaLevel1%22%2C%22value%22%3A%22State%22%7D%2C%7B%22name%22%3A%22postalCode%22%2C%22value%22%3A%22Postal%20code%22%7D%2C%7B%22name%22%3A%22country%22%2C%22value%22%3A%22Country%22%7D%2C%7B%22name%22%3A%22apiKey%22%2C%22value%22%3A%22AIzaSyB2dLOicHJgolKiUHivaqn3iR_qJgV8ark%22%7D%2C%7B%22name%22%3A%22customCSS%22%2C%22value%22%3A%22input%20%7B%5Cr%5Cn%20%20%20%20%20height%3A%2040px%3B%5Cr%5Cn%20%20%20%20%20width%3A%20310px%3B%5Cr%5Cn%7D%5Cr%5Cn%5Cr%5Cn%5Cr%5Cninput%5Btype%3Dtext%5D%20%20%7B%5Cr%5Cn%20%20%20%20-moz-box-shadow%3A%20none%3B%5Cr%5Cn%20%20%20%20-webkit-box-shadow%3A%20none%3B%5Cr%5Cn%20%20%20%20%20box-shadow%3A%20none%3B%20%5Cr%5Cnfont-size%3A%201em%3B%5Cr%5Cn%7D%5Cr%5Cn%5Cr%5Cn%22%7D%5D"
+                  data-version="2" /></div>
+              <script
+                type="text/javascript"> setTimeout(function () { var _cFieldFrame = document.getElementById("customFieldFrame_122"); if (_cFieldFrame) { _cFieldFrame.onload = function () { if (typeof widgetFrameLoaded !== 'undefined') { widgetFrameLoaded(122, { "formID": 233093970528058 }) } }; _cFieldFrame.src = "//app-widgets.jotform.io/autocompleteAddress/?qid=122&isOpenedInPortal=undefined&align=Left&ref=" + encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' + '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1); _cFieldFrame.addClassName("custom-field-frame-rendered") } }, 0); </script>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="form-section" id="section_124">
+        <li id="cid_124" class="form-input-wide" data-type="control_collapse">
+          <div class="form-collapse-table form-collapse-hidden" id="collapse_124" data-component="collapse"><span
+              class="form-collapse-mid" id="collapse-text_124"></span><span
+              class="form-collapse-right form-collapse-right-show"> </span></div>
+        </li>
+        <li class="form-line jf-required" data-type="control_checkbox" id="id_142"><label
+            class="form-label form-label-top form-label-auto" id="label_142" for="input_142_0" aria-hidden="true"> <span
+              class="form-required">*</span> </label>
+          <div id="cid_142" class="form-input-wide jf-required" data-layout="full">
+            <div class="form-single-column" role="group" aria-labelledby="label_142" data-component="checkbox"><span
+                class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                  aria-describedby="label_142" class="form-checkbox validate[required]" id="input_142_0"
+                  name="q142_typeA142[]" value="By clicking the submit button, I agree to terms &amp; conditions"
+                  required="" /><label id="label_input_142_0" for="input_142_0">By clicking the submit button, I agree
+                  to terms &amp; conditions</label></span></div>
+          </div>
+        </li>
+        <li class="form-line" data-type="control_text" id="id_143">
+          <div id="cid_143" class="form-input-wide" data-layout="full">
+            <div id="text_143" class="form-html" data-component="text" tabindex="0">
+              <p> Applicant hereby acknowledges that it has read and agrees to the credit terms and conditions contained
+                herein, including the Additional Terms (attached and initialed) annexed hereto and collectively
+                &quot;Terms&quot;, including subsequent modifications thereto. Applicant certifies that the above
+                information and any attachments hereto are true and furnished for the purpose of inducing United Metro
+                Energy Corp. (UMEC) to extend credit to the undersigned.<br /> Applicant agrees to the Terms disclosed
+                in any credit or purchase agreement subsequently issued and that any purchases shall constitute
+                acceptance of those Terms. Applicant authorized UMEC to receive information regarding its banking
+                relationship from the above‐named financial institution. <br /> Applicant authorizes UMEC to investigate
+                Applicant's credit record, obtain credit reports, verify assets, debts, references, income information,
+                and report same to a credit reporting agency and to answer any questions regarding Applicant's credit
+                history with UMEC. If UMEC refers the account to an attorney or collection agency, Applicant agrees to
+                pay all reasonable attorney's fees, court costs, and costs of collection. <br /> Applicant agrees that a
+                reasonable hourly fee or one‐third contingency fee shall be a reasonable attorney fee in the event any
+                matter is referred to an attorney or collection agency for collection. The above authorizations shall be
+                continuing in nature. Upon request, UMEC will inform the Applicant of the name and address of the credit
+                reporting agency which furnished the report</p>
+            </div>
+          </div>
+        </li>
+        <li class="form-line jf-required" data-type="control_signature" id="id_57"><label
+            class="form-label form-label-top form-label-auto" id="label_57" for="input_57" aria-hidden="false">
+            Authorized Signature<span class="form-required">*</span> </label>
+          <div id="cid_57" class="form-input-wide jf-required" data-layout="half">
+            <div data-wrapper-react="true">
+              <div id="signature_pad_57" class="signature-pad-wrapper">
+                <div data-wrapper-react="true">
+                  <!--[if IE 7]><script type="text/javascript" src="/js/vendor/json2.js"></script><![endif]-->
+                </div>
+                <div class="signature-line signature-wrapper signature-placeholder" data-component="signature">
+                  <div id="sig_pad_57" data-width="430" data-height="150" data-id="57" data-required="true"
+                    class="pad validate[required]" aria-labelledby="label_57"></div><input type="hidden"
+                    name="q57_authorizedsignature" class="output4" id="input_57" />
+                </div>
+                <aside class="signature-pad-aside"><span class="clear-pad-btn clear-pad" role="button"
+                    tabindex="0">Clear</span></aside>
+              </div>
+              <div data-wrapper-react="true">
+                <script type="text/javascript"> window.signatureForm = true </script>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="form-line jf-required" data-type="control_fullname" id="id_147"><label
+            class="form-label form-label-top form-label-auto" id="label_147" for="first_147" aria-hidden="false">
+            Printed Name<span class="form-required">*</span> </label>
+          <div id="cid_147" class="form-input-wide jf-required" data-layout="full">
+            <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top"
+                data-input-type="first"><input type="text" id="first_147" name="q147_printedName[first]"
+                  class="form-textbox validate[required]" data-defaultvalue=""
+                  autoComplete="section-input_147 given-name" size="10" data-component="first"
+                  aria-labelledby="label_147 sublabel_147_first" required="" value="" /><label class="form-sub-label"
+                  for="first_147" id="sublabel_147_first" style="min-height:13px">First Name</label></span><span
+                class="form-sub-label-container" style="vertical-align:top" data-input-type="last"><input type="text"
+                  id="last_147" name="q147_printedName[last]" class="form-textbox validate[required]"
+                  data-defaultvalue="" autoComplete="section-input_147 family-name" size="15" data-component="last"
+                  aria-labelledby="label_147 sublabel_147_last" required="" value="" /><label class="form-sub-label"
+                  for="last_147" id="sublabel_147_last" style="min-height:13px">Last Name</label></span></div>
+          </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_datetime" id="id_136"><label
+            class="form-label form-label-top form-label-auto" id="label_136" for="lite_mode_136" aria-hidden="false">
+            Date </label>
+          <div id="cid_136" class="form-input-wide always-hidden" data-layout="half">
+            <div data-wrapper-react="true">
+              <div style="display:none"><span class="form-sub-label-container" style="vertical-align:top"><input
+                    type="tel" class="form-textbox validate[limitDate]" id="month_136" name="q136_date[month]" size="2"
+                    data-maxlength="2" data-age="" maxLength="2" value="03" autoComplete="off"
+                    aria-labelledby="label_136 sublabel_136_month" /><span class="date-separate" aria-hidden="true">
+                    -</span><label class="form-sub-label" for="month_136" id="sublabel_136_month"
+                    style="min-height:13px">Month</label></span><span class="form-sub-label-container"
+                  style="vertical-align:top"><input type="tel" class="currentDate form-textbox validate[limitDate]"
+                    id="day_136" name="q136_date[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="14"
+                    autoComplete="off" aria-labelledby="label_136 sublabel_136_day" /><span class="date-separate"
+                    aria-hidden="true"> -</span><label class="form-sub-label" for="day_136" id="sublabel_136_day"
+                    style="min-height:13px">Day</label></span><span class="form-sub-label-container"
+                  style="vertical-align:top"><input type="tel" class="form-textbox validate[limitDate]" id="year_136"
+                    name="q136_date[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="2024"
+                    autoComplete="off" aria-labelledby="label_136 sublabel_136_year" /><label class="form-sub-label"
+                    for="year_136" id="sublabel_136_year" style="min-height:13px">Year</label></span></div><span
+                class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                  class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_136" size="12"
+                  data-maxlength="12" maxLength="12" data-age="" value="03-14-2024" data-format="mmddyyyy"
+                  data-seperator="-" placeholder="MM-DD-YYYY" data-placeholder="MM-DD-YYYY" autoComplete="off"
+                  aria-labelledby="label_136 sublabel_136_litemode" /><img
+                  class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_136_pick"
+                  src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true"
+                  data-allow-time="No" data-version="v2" /><label class="form-sub-label" for="lite_mode_136"
+                  id="sublabel_136_litemode" style="min-height:13px">Date</label></span>
+            </div>
+          </div>
+        </li>
+        <li class="form-line" data-type="control_button" id="id_61">
+          <div id="cid_61" class="form-input-wide" data-layout="full">
+            <div data-align="auto" class="form-buttons-wrapper form-buttons-auto jsTest-button-wrapperField"><button
+                id="input_61" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField"
+                data-component="button" data-content="">Submit</button></div>
+          </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_textarea" id="id_92"><label
+            class="form-label form-label-top form-label-auto" id="label_92" for="input_92" aria-hidden="false"> Bank
+            Address Variable </label>
+          <div id="cid_92" class="form-input-wide always-hidden" data-layout="full"> <textarea id="input_92"
+              class="form-textarea" name="q92_bankAddress92" style="width:648px;height:163px" data-component="textarea"
+              aria-labelledby="label_92"></textarea> </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_address" id="id_91"
+          data-compound-hint=",,,,Please Select,,Please Select,"><label
+            class="form-label form-label-top form-label-auto" id="label_91" for="input_91_city" aria-hidden="false">
+            Bank Address PDF </label>
+          <div id="cid_91" class="form-input-wide always-hidden" data-layout="full">
+            <div summary="" class="form-address-table jsTest-addressField">
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField" style="display:none"><span
+                  class="form-address-line form-address-street-line jsTest-address-lineField"><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                      id="input_91_addr_line1" name="q91_bankAddress91[addr_line1]"
+                      class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_91 off"
+                      data-component="address_line_1" aria-labelledby="label_91 sublabel_91_addr_line1"
+                      value="" /><label class="form-sub-label" for="input_91_addr_line1" id="sublabel_91_addr_line1"
+                      style="min-height:13px">Street Address</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField" style="display:none"><span
+                  class="form-address-line form-address-street-line jsTest-address-lineField"><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                      id="input_91_addr_line2" name="q91_bankAddress91[addr_line2]"
+                      class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_91 off"
+                      data-component="address_line_2" aria-labelledby="label_91 sublabel_91_addr_line2"
+                      value="" /><label class="form-sub-label" for="input_91_addr_line2" id="sublabel_91_addr_line2"
+                      style="min-height:13px">Street Address Line 2</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                  class="form-address-line form-address-city-line jsTest-address-lineField "><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_91_city"
+                      name="q91_bankAddress91[city]" class="form-textbox form-address-city" data-defaultvalue=""
+                      autoComplete="section-input_91 address-level2" data-component="city"
+                      aria-labelledby="label_91 sublabel_91_city" required="" value="" /><label class="form-sub-label"
+                      for="input_91_city" id="sublabel_91_city" style="min-height:13px">City</label></span></span><span
+                  class="form-address-line form-address-state-line jsTest-address-lineField "><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_91_state"
+                      name="q91_bankAddress91[state]" class="form-textbox form-address-state" data-defaultvalue=""
+                      autoComplete="section-input_91 address-level1" data-component="state"
+                      aria-labelledby="label_91 sublabel_91_state" required="" value="" /><label class="form-sub-label"
+                      for="input_91_state" id="sublabel_91_state" style="min-height:13px">State /
+                      Province</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField" style="display:none"><span
+                  class="form-address-line form-address-zip-line jsTest-address-lineField form-address-hiddenLine"
+                  style="display:none"><span class="form-sub-label-container" style="vertical-align:top"><input
+                      type="text" id="input_91_postal" name="q91_bankAddress91[postal]"
+                      class="form-textbox form-address-postal" data-defaultvalue="" autoComplete="section-input_91 off"
+                      data-component="zip" aria-labelledby="label_91 sublabel_91_postal" value="" /><label
+                      class="form-sub-label" for="input_91_postal" id="sublabel_91_postal"
+                      style="min-height:13px">Postal / Zip Code</label></span></span></div>
+            </div>
+          </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_textarea" id="id_63"><label
+            class="form-label form-label-top form-label-auto" id="label_63" for="input_63" aria-hidden="false"> Delivery
+            Address Variable </label>
+          <div id="cid_63" class="form-input-wide always-hidden" data-layout="full"> <textarea id="input_63"
+              class="form-textarea" name="q63_deliveryAddress" style="width:648px;height:163px"
+              data-component="textarea" aria-labelledby="label_63"></textarea> </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_address" id="id_9"
+          data-compound-hint=",,,,Please Select,,Please Select,"><label
+            class="form-label form-label-top form-label-auto" id="label_9" for="input_9_addr_line1" aria-hidden="false">
+            Delivery Address for PDF </label>
+          <div id="cid_9" class="form-input-wide always-hidden" data-layout="full">
+            <div summary="" class="form-address-table jsTest-addressField">
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                  class="form-address-line form-address-street-line jsTest-address-lineField"><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                      id="input_9_addr_line1" name="q9_deliveryAddress9[addr_line1]"
+                      class="form-textbox form-address-line" data-defaultvalue=""
+                      autoComplete="section-input_9 address-line1" data-component="address_line_1"
+                      aria-labelledby="label_9 sublabel_9_addr_line1" required="" value="" /><label
+                      class="form-sub-label" for="input_9_addr_line1" id="sublabel_9_addr_line1"
+                      style="min-height:13px">Address</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField" style="display:none"><span
+                  class="form-address-line form-address-street-line jsTest-address-lineField"><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                      id="input_9_addr_line2" name="q9_deliveryAddress9[addr_line2]"
+                      class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_9 off"
+                      data-component="address_line_2" aria-labelledby="label_9 sublabel_9_addr_line2" value="" /><label
+                      class="form-sub-label" for="input_9_addr_line2" id="sublabel_9_addr_line2"
+                      style="min-height:13px">Street Address Line 2</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                  class="form-address-line form-address-city-line jsTest-address-lineField "><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_9_city"
+                      name="q9_deliveryAddress9[city]" class="form-textbox form-address-city" data-defaultvalue=""
+                      autoComplete="section-input_9 address-level2" data-component="city"
+                      aria-labelledby="label_9 sublabel_9_city" required="" value="" /><label class="form-sub-label"
+                      for="input_9_city" id="sublabel_9_city" style="min-height:13px">City</label></span></span><span
+                  class="form-address-line form-address-state-line jsTest-address-lineField "><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_9_state"
+                      name="q9_deliveryAddress9[state]" class="form-textbox form-address-state" data-defaultvalue=""
+                      autoComplete="section-input_9 address-level1" data-component="state"
+                      aria-labelledby="label_9 sublabel_9_state" required="" value="" /><label class="form-sub-label"
+                      for="input_9_state" id="sublabel_9_state" style="min-height:13px">State</label></span></span>
+              </div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                  class="form-address-line form-address-zip-line jsTest-address-lineField "><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_9_postal"
+                      name="q9_deliveryAddress9[postal]" class="form-textbox form-address-postal" data-defaultvalue=""
+                      autoComplete="section-input_9 postal-code" data-component="zip"
+                      aria-labelledby="label_9 sublabel_9_postal" required="" value="" /><label class="form-sub-label"
+                      for="input_9_postal" id="sublabel_9_postal" style="min-height:13px">Zip Code</label></span></span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_textarea" id="id_104"><label
+            class="form-label form-label-top form-label-auto" id="label_104" for="input_104" aria-hidden="false"> Trade
+            Reference 1 Address Variable </label>
+          <div id="cid_104" class="form-input-wide always-hidden" data-layout="full"> <textarea id="input_104"
+              class="form-textarea" name="q104_tradeReference" style="width:648px;height:163px"
+              data-component="textarea" aria-labelledby="label_104"></textarea> </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_textarea" id="id_113"><label
+            class="form-label form-label-top form-label-auto" id="label_113" for="input_113" aria-hidden="false"> Trade
+            Reference 2 Address Variable </label>
+          <div id="cid_113" class="form-input-wide always-hidden" data-layout="full"> <textarea id="input_113"
+              class="form-textarea" name="q113_tradeReference113" style="width:648px;height:163px"
+              data-component="textarea" aria-labelledby="label_113"></textarea> </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_textarea" id="id_117"><label
+            class="form-label form-label-top form-label-auto" id="label_117" for="input_117" aria-hidden="false"> Trade
+            Reference 3 Address Variable </label>
+          <div id="cid_117" class="form-input-wide always-hidden" data-layout="full"> <textarea id="input_117"
+              class="form-textarea" name="q117_tradeReference117" style="width:648px;height:163px"
+              data-component="textarea" aria-labelledby="label_117"></textarea> </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_address" id="id_105"
+          data-compound-hint=",,,,Please Select,,Please Select,"><label
+            class="form-label form-label-top form-label-auto" id="label_105" for="input_105_addr_line1"
+            aria-hidden="false"> Trade Reference 1 Address for PDF </label>
+          <div id="cid_105" class="form-input-wide always-hidden" data-layout="full">
+            <div summary="" class="form-address-table jsTest-addressField">
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                  class="form-address-line form-address-street-line jsTest-address-lineField"><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                      id="input_105_addr_line1" name="q105_tradeReference105[addr_line1]"
+                      class="form-textbox form-address-line" data-defaultvalue=""
+                      autoComplete="section-input_105 address-line1" data-component="address_line_1"
+                      aria-labelledby="label_105 sublabel_105_addr_line1" required="" value="" /><label
+                      class="form-sub-label" for="input_105_addr_line1" id="sublabel_105_addr_line1"
+                      style="min-height:13px">Address</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField" style="display:none"><span
+                  class="form-address-line form-address-street-line jsTest-address-lineField"><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                      id="input_105_addr_line2" name="q105_tradeReference105[addr_line2]"
+                      class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_105 off"
+                      data-component="address_line_2" aria-labelledby="label_105 sublabel_105_addr_line2"
+                      value="" /><label class="form-sub-label" for="input_105_addr_line2" id="sublabel_105_addr_line2"
+                      style="min-height:13px">Street Address Line 2</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                  class="form-address-line form-address-city-line jsTest-address-lineField "><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_105_city"
+                      name="q105_tradeReference105[city]" class="form-textbox form-address-city" data-defaultvalue=""
+                      autoComplete="section-input_105 address-level2" data-component="city"
+                      aria-labelledby="label_105 sublabel_105_city" required="" value="" /><label class="form-sub-label"
+                      for="input_105_city" id="sublabel_105_city"
+                      style="min-height:13px">City</label></span></span><span
+                  class="form-address-line form-address-state-line jsTest-address-lineField "><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_105_state"
+                      name="q105_tradeReference105[state]" class="form-textbox form-address-state" data-defaultvalue=""
+                      autoComplete="section-input_105 address-level1" data-component="state"
+                      aria-labelledby="label_105 sublabel_105_state" required="" value="" /><label
+                      class="form-sub-label" for="input_105_state" id="sublabel_105_state"
+                      style="min-height:13px">State</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField" style="display:none"><span
+                  class="form-address-line form-address-zip-line jsTest-address-lineField form-address-hiddenLine"
+                  style="display:none"><span class="form-sub-label-container" style="vertical-align:top"><input
+                      type="text" id="input_105_postal" name="q105_tradeReference105[postal]"
+                      class="form-textbox form-address-postal" data-defaultvalue="" autoComplete="section-input_105 off"
+                      data-component="zip" aria-labelledby="label_105 sublabel_105_postal" value="" /><label
+                      class="form-sub-label" for="input_105_postal" id="sublabel_105_postal" style="min-height:13px">Zip
+                      Code</label></span></span></div>
+            </div>
+          </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_address" id="id_114"
+          data-compound-hint=",,,,Please Select,,Please Select,"><label
+            class="form-label form-label-top form-label-auto" id="label_114" for="input_114_addr_line1"
+            aria-hidden="false"> Trade Reference 2 Address for PDF </label>
+          <div id="cid_114" class="form-input-wide always-hidden" data-layout="full">
+            <div summary="" class="form-address-table jsTest-addressField">
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                  class="form-address-line form-address-street-line jsTest-address-lineField"><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                      id="input_114_addr_line1" name="q114_tradeReference114[addr_line1]"
+                      class="form-textbox form-address-line" data-defaultvalue=""
+                      autoComplete="section-input_114 address-line1" data-component="address_line_1"
+                      aria-labelledby="label_114 sublabel_114_addr_line1" required="" value="" /><label
+                      class="form-sub-label" for="input_114_addr_line1" id="sublabel_114_addr_line1"
+                      style="min-height:13px">Address</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField" style="display:none"><span
+                  class="form-address-line form-address-street-line jsTest-address-lineField"><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                      id="input_114_addr_line2" name="q114_tradeReference114[addr_line2]"
+                      class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_114 off"
+                      data-component="address_line_2" aria-labelledby="label_114 sublabel_114_addr_line2"
+                      value="" /><label class="form-sub-label" for="input_114_addr_line2" id="sublabel_114_addr_line2"
+                      style="min-height:13px">Street Address Line 2</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                  class="form-address-line form-address-city-line jsTest-address-lineField "><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_114_city"
+                      name="q114_tradeReference114[city]" class="form-textbox form-address-city" data-defaultvalue=""
+                      autoComplete="section-input_114 address-level2" data-component="city"
+                      aria-labelledby="label_114 sublabel_114_city" required="" value="" /><label class="form-sub-label"
+                      for="input_114_city" id="sublabel_114_city"
+                      style="min-height:13px">City</label></span></span><span
+                  class="form-address-line form-address-state-line jsTest-address-lineField "><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_114_state"
+                      name="q114_tradeReference114[state]" class="form-textbox form-address-state" data-defaultvalue=""
+                      autoComplete="section-input_114 address-level1" data-component="state"
+                      aria-labelledby="label_114 sublabel_114_state" required="" value="" /><label
+                      class="form-sub-label" for="input_114_state" id="sublabel_114_state"
+                      style="min-height:13px">State</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField" style="display:none"><span
+                  class="form-address-line form-address-zip-line jsTest-address-lineField form-address-hiddenLine"
+                  style="display:none"><span class="form-sub-label-container" style="vertical-align:top"><input
+                      type="text" id="input_114_postal" name="q114_tradeReference114[postal]"
+                      class="form-textbox form-address-postal" data-defaultvalue="" autoComplete="section-input_114 off"
+                      data-component="zip" aria-labelledby="label_114 sublabel_114_postal" value="" /><label
+                      class="form-sub-label" for="input_114_postal" id="sublabel_114_postal" style="min-height:13px">Zip
+                      Code</label></span></span></div>
+            </div>
+          </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_address" id="id_116"
+          data-compound-hint=",,,,Please Select,,Please Select,"><label
+            class="form-label form-label-top form-label-auto" id="label_116" for="input_116_addr_line1"
+            aria-hidden="false"> Trade Reference 3 Address for PDF </label>
+          <div id="cid_116" class="form-input-wide always-hidden" data-layout="full">
+            <div summary="" class="form-address-table jsTest-addressField">
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                  class="form-address-line form-address-street-line jsTest-address-lineField"><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                      id="input_116_addr_line1" name="q116_tradeReference116[addr_line1]"
+                      class="form-textbox form-address-line" data-defaultvalue=""
+                      autoComplete="section-input_116 address-line1" data-component="address_line_1"
+                      aria-labelledby="label_116 sublabel_116_addr_line1" required="" value="" /><label
+                      class="form-sub-label" for="input_116_addr_line1" id="sublabel_116_addr_line1"
+                      style="min-height:13px">Address</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField" style="display:none"><span
+                  class="form-address-line form-address-street-line jsTest-address-lineField"><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                      id="input_116_addr_line2" name="q116_tradeReference116[addr_line2]"
+                      class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_116 off"
+                      data-component="address_line_2" aria-labelledby="label_116 sublabel_116_addr_line2"
+                      value="" /><label class="form-sub-label" for="input_116_addr_line2" id="sublabel_116_addr_line2"
+                      style="min-height:13px">Street Address Line 2</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                  class="form-address-line form-address-city-line jsTest-address-lineField "><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_116_city"
+                      name="q116_tradeReference116[city]" class="form-textbox form-address-city" data-defaultvalue=""
+                      autoComplete="section-input_116 address-level2" data-component="city"
+                      aria-labelledby="label_116 sublabel_116_city" required="" value="" /><label class="form-sub-label"
+                      for="input_116_city" id="sublabel_116_city"
+                      style="min-height:13px">City</label></span></span><span
+                  class="form-address-line form-address-state-line jsTest-address-lineField "><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_116_state"
+                      name="q116_tradeReference116[state]" class="form-textbox form-address-state" data-defaultvalue=""
+                      autoComplete="section-input_116 address-level1" data-component="state"
+                      aria-labelledby="label_116 sublabel_116_state" required="" value="" /><label
+                      class="form-sub-label" for="input_116_state" id="sublabel_116_state"
+                      style="min-height:13px">State</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField" style="display:none"><span
+                  class="form-address-line form-address-zip-line jsTest-address-lineField form-address-hiddenLine"
+                  style="display:none"><span class="form-sub-label-container" style="vertical-align:top"><input
+                      type="text" id="input_116_postal" name="q116_tradeReference116[postal]"
+                      class="form-textbox form-address-postal" data-defaultvalue="" autoComplete="section-input_116 off"
+                      data-component="zip" aria-labelledby="label_116 sublabel_116_postal" value="" /><label
+                      class="form-sub-label" for="input_116_postal" id="sublabel_116_postal" style="min-height:13px">Zip
+                      Code</label></span></span></div>
+            </div>
+          </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_textbox" id="id_73"><label
+            class="form-label form-label-top form-label-auto" id="label_73" for="input_73" aria-hidden="false"> Type of
+            Business Variable </label>
+          <div id="cid_73" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_73"
+              name="q73_typeOf73" data-type="input-textbox" class="form-textbox" data-defaultvalue=""
+              style="width:310px" size="310" data-component="textbox" aria-labelledby="label_73" value="" /> </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_textarea" id="id_78"><label
+            class="form-label form-label-top form-label-auto" id="label_78" for="input_78" aria-hidden="false"> Mailing
+            Address Variable </label>
+          <div id="cid_78" class="form-input-wide always-hidden" data-layout="full"> <textarea id="input_78"
+              class="form-textarea" name="q78_mailingAddress78" style="width:648px;height:163px"
+              data-component="textarea" aria-labelledby="label_78"></textarea> </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_address" id="id_79"
+          data-compound-hint=",,,,Please Select,,Please Select,"><label
+            class="form-label form-label-top form-label-auto" id="label_79" for="input_79_addr_line1"
+            aria-hidden="false"> Mailing Address for PDF </label>
+          <div id="cid_79" class="form-input-wide always-hidden" data-layout="full">
+            <div summary="" class="form-address-table jsTest-addressField">
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                  class="form-address-line form-address-street-line jsTest-address-lineField"><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                      id="input_79_addr_line1" name="q79_mailingAddress79[addr_line1]"
+                      class="form-textbox form-address-line" data-defaultvalue=""
+                      autoComplete="section-input_79 address-line1" data-component="address_line_1"
+                      aria-labelledby="label_79 sublabel_79_addr_line1" required="" value="" /><label
+                      class="form-sub-label" for="input_79_addr_line1" id="sublabel_79_addr_line1"
+                      style="min-height:13px">Address</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField" style="display:none"><span
+                  class="form-address-line form-address-street-line jsTest-address-lineField"><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                      id="input_79_addr_line2" name="q79_mailingAddress79[addr_line2]"
+                      class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_79 off"
+                      data-component="address_line_2" aria-labelledby="label_79 sublabel_79_addr_line2"
+                      value="" /><label class="form-sub-label" for="input_79_addr_line2" id="sublabel_79_addr_line2"
+                      style="min-height:13px">Street Address Line 2</label></span></span></div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                  class="form-address-line form-address-city-line jsTest-address-lineField "><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_79_city"
+                      name="q79_mailingAddress79[city]" class="form-textbox form-address-city" data-defaultvalue=""
+                      autoComplete="section-input_79 address-level2" data-component="city"
+                      aria-labelledby="label_79 sublabel_79_city" required="" value="" /><label class="form-sub-label"
+                      for="input_79_city" id="sublabel_79_city" style="min-height:13px">City</label></span></span><span
+                  class="form-address-line form-address-state-line jsTest-address-lineField "><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_79_state"
+                      name="q79_mailingAddress79[state]" class="form-textbox form-address-state" data-defaultvalue=""
+                      autoComplete="section-input_79 address-level1" data-component="state"
+                      aria-labelledby="label_79 sublabel_79_state" required="" value="" /><label class="form-sub-label"
+                      for="input_79_state" id="sublabel_79_state" style="min-height:13px">State</label></span></span>
+              </div>
+              <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                  class="form-address-line form-address-zip-line jsTest-address-lineField "><span
+                    class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_79_postal"
+                      name="q79_mailingAddress79[postal]" class="form-textbox form-address-postal" data-defaultvalue=""
+                      autoComplete="section-input_79 postal-code" data-component="zip"
+                      aria-labelledby="label_79 sublabel_79_postal" required="" value="" /><label class="form-sub-label"
+                      for="input_79_postal" id="sublabel_79_postal" style="min-height:13px">Zip
+                      Code</label></span></span></div>
+            </div>
+          </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_textbox" id="id_81"><label
+            class="form-label form-label-top form-label-auto" id="label_81" for="input_81" aria-hidden="false">
+            Product(s) Requested Variable </label>
+          <div id="cid_81" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_81"
+              name="q81_productsRequested" data-type="input-textbox" class="form-textbox" data-defaultvalue=""
+              style="width:310px" size="310" data-component="textbox" aria-labelledby="label_81" value="" /> </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_textbox" id="id_83"><label
+            class="form-label form-label-top form-label-auto" id="label_83" for="input_83" aria-hidden="false">
+            Estimated Annual Volume (GAL) Variable </label>
+          <div id="cid_83" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_83"
+              name="q83_estimatedAnnual" data-type="input-textbox" class="form-textbox" data-defaultvalue=""
+              style="width:310px" size="310" data-component="textbox" aria-labelledby="label_83" value="" /> </div>
+        </li>
+        <li class="form-line always-hidden" data-type="control_textbox" id="id_85"><label
+            class="form-label form-label-top form-label-auto" id="label_85" for="input_85" aria-hidden="false"> Credit
+            line Requested Variable </label>
+          <div id="cid_85" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_85"
+              name="q85_creditLine85" data-type="input-textbox" class="form-textbox" data-defaultvalue=""
+              style="width:310px" size="310" data-component="textbox" aria-labelledby="label_85" value="" /> </div>
+        </li>
+        <li style="clear:both"></li>
+        <li style="display:none">Should be Empty: <input type="text" name="website" value="" type="hidden" /></li>
+      </ul>
+  </div>
+  <script> JotForm.showJotFormPowered = "0"; </script>
+  <script> JotForm.poweredByText = "Powered by Jotform"; </script><input type="hidden" class="simple_spc"
+    id="simple_spc" name="simple_spc" value="233093970528058" />
+  <script
+    type="text/javascript"> var all_spc = document.querySelectorAll("form[id='233093970528058'] .si" + "mple" + "_spc"); for (var i = 0; i < all_spc.length; i++) { all_spc[i].value = "233093970528058-233093970528058" } </script>
+</form>
+<script type="text/javascript">JotForm.ownerView = true;</script>
+<script type="text/javascript">JotForm.isNewSACL = true;</script>
+
+<!-- Custom Script Beginning -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+<!-- Load React. -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+
+
+<script>
+  const main = async (searchValue) => {
+    const URL =
+      'https://apps.dos.ny.gov/PublicInquiryWeb/api/PublicInquiry/GetComplexSearchMatchingEntities'
+
+    const data = JSON.stringify({
+      searchValue: searchValue,
+      searchByTypeIndicator: 'EntityName',
+      searchExpressionIndicator: 'BeginsWith',
+      // To change to Active change AllStatuses to Active
+      entityStatusIndicator: 'Active',
+      entityTypeIndicator: [
+        'Corporation',
+        'LimitedLiabilityCompany',
+        'LimitedPartnership',
+        'LimitedLiabilityPartnership',
+      ],
+      listPaginationInfo: {
+        listStartRecord: 1,
+        listEndRecord: 50,
+      },
+    })
+
+    const response = await axios.post(URL, data, {
+      headers: { 'Content-Type': 'application/json' },
+    })
+
+    const { entitySearchResultList } = response.data
+
+    let entityList = []
+
+    entitySearchResultList.forEach((entityInfo) => {
+      entityList.push(entityInfo.entityName)
+    })
+    return entityList
+  }
+
+
+</script>
+
+<script>
+  const { useState, useEffect, useRef, createElement } = React
+
+  const Autocomplete = ({ renderInput }) => {
+    // State of the drop down menu
+    const [isShow, setIsShow] = useState(false)
+    // filters suggestions on load
+    const [list, setList] = useState([])
+    // Tracks which value is active on keypress
+    const [active, setActive] = useState(0)
+
+    const render = useRef(false)
+
+
+    // Determines if mouse has been click away from field
+    useEffect(() => {
+      const handleOutsideClick = (event) => {
+        // event.preventDefault()
+        if (render.current) {
+          if (event.target.id === 'input_5') {
+            setIsShow(true)
+          } else if (event.target.id != 'input_5' || (isShow == true && event.target.class != 'active')) {
+            setIsShow(false)
+            const check = checkForMatch(list, renderInput.value)
+            !check ? errorHandler(renderInput, 'Value needs to match drop down') : JotForm.corrected(renderInput)
+          }
+        } else {
+          render.current = true
+        }
+
+
+
+      }
+      document.addEventListener('click', handleOutsideClick)
+      return () => {
+        document.removeEventListener('click', handleOutsideClick)
+      }
+    }, [isShow, list])
+
+
+    // Event Listeners running functions on actions
+    useEffect(() => {
+      renderInput.addEventListener('input', handleChange)
+      renderInput.addEventListener('click', handleClick)
+      renderInput.addEventListener('keydown', handleKeyDown)
+      return () => {
+        renderInput.removeEventListener('input', handleChange)
+        renderInput.removeEventListener('click', handleClick)
+        renderInput.removeEventListener('keydown', handleKeyDown)
+      }
+    }, [list, active])
+
+    const creditInput = document.getElementById('input_84')
+
+    useEffect(() => {
+      creditInput.addEventListener('change', handleCredit)
+      console.log('event')
+      return () => {
+        creditInput.removeEventListener('change', handleCredit)
+      }
+    })
+
+    const handleCredit = (e) => {
+      const input = e.target.value
+      if (input.replace(/[^0-9\.]/g, '') < 10000) errorHandler(creditInput, 'Value Cannot be less than $10,000')
+    }
+
+
+    const handleKeyDown = (e) => {
+      const keyCode = e.code
+      switch (keyCode) {
+        case 'Enter':
+          e.preventDefault()
+          if (list.length !== 0) {
+            const input = list[active]
+            renderInput.value = input
+            setIsShow(false)
+            setActive(0)
+          }
+          break
+        case 'ArrowUp':
+          setActive(!active ? 0 : active - 1)
+          break
+        case 'ArrowDown':
+          setActive(active + 1 === list.length ? active : active + 1)
+          break
+        case 'Tab':
+          const check = checkForMatch(list, renderInput.value)
+          check ? JotForm.corrected(renderInput) : errorHandler(renderInput, 'Value needs to match drop down')
+          setIsShow(false)
+          setActive(0)
+          break
+        default:
+          break
+      }
+    }
+
+    const handleClick = (e) => {
+      const input = e.target.value
+      const check = checkForMatch(list, input)
+      if (input && !check) {
+        setIsShow(true)
+      }
+    }
+
+    // Handles the dropdown option clicks
+    const handleClickSuggestion = (e) => {
+      const input = e.target.innerText
+      renderInput.value = input
+      setIsShow(false)
+      setActive(0)
+    }
+
+    // Checks to see if input has a match against an array of items
+    const checkForMatch = (list, input) => list.some((item) => { return item.toLowerCase() === input.toLowerCase() })
+
+    // Create the error handler for jotform
+    const errorHandler = (input, message) => JotForm.errored(input, message)
+
+
+    const handleChange = async (e) => {
+      const input = e.target.value
+      input && setIsShow(true)
+      const results = await main(input)
+      setList(results)
+      setActive(0)
+      const check = checkForMatch(list, input)
+
+      if (check) {
+        renderInput.value = input.toUpperCase()
+        JotForm.corrected(renderInput)
+        setIsShow(false)
+      } else {
+        errorHandler(renderInput, 'Value needs to match drop down')
+      }
+    }
+
+
+    // Function that renders the suggestions or not found
+    const renderAutocomplete = () => {
+      // if drop down is shown and suggestions are not empty
+      if (isShow && list.length > 0) {
+        return (
+          // createElement('ul', { className: 'autocomplete' },
+          list.map((item, index) => {
+            return (
+              createElement('li', {
+                className: index === active ? 'active' : '', key: index, onClick: (e) => handleClickSuggestion(e), ref: (el) =>
+                  index === active &&
+                  el !== null &&
+                  el.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'nearest',
+                  }), onMouseEnter: () => setActive(index)
+              }, item
+
+              )
+            )
+          })
+
+        )
+        // if drop down is active and no suggestions
+      } else if (isShow && list.length === 0) {
+        return (
+          createElement('div', { className: 'noAutocomplete' },
+            createElement('em', { className: 'noAutocomplete' }, 'No Legal Company Found')
+          )
+        )
+      } else {
+        return null
+      }
+    }
+    return (createElement(renderAutocomplete))
+  }
+
+  // This is the input Containers Element
+  const inputContainerElem = document.getElementById('cid_5')
+  // This is the input element
+  const inputElem = document.getElementById('input_5')
+  // Create an element to attach to input container element 
+  const elem = document.createElement("ul")
+  elem.classList.add("autocomplete")
+  // attach created element inside input container element
+  inputContainerElem.appendChild(elem)
+  inputElem.setAttribute("autocomplete", "off")
+
+  // Renders the component within the create element above
+  ReactDOM.render(createElement(Autocomplete, { renderInput: inputElem }), elem);
+
+</script>
+
+<style>
+  .autocomplete {
+    position: absolute;
+    /* border: 1px solid #999; */
+    border-top-width: 0;
+    max-height: 209px;
+    overflow-y: auto;
+    background-color: #f8f8f8;
+    width: 100%;
+    border-radius: 2px;
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .noAutocomplete {
+    color: red;
+    margin: 8px;
+  }
+
+  .autocomplete li {
+    list-style: none;
+    padding: 8px;
+  }
+
+  .autocomplete>.active,
+  .autocomplete li:hover {
+    background-color: darkgray;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .autocomplete li:not(:last-of-type) {
+    border-bottom: 1px solid #999;
+  }
+</style>
+
+<script>
+
+
+  const { get, set } = Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype, 'value')
+
+  const t = document.getElementById('input_63')
+  Object.defineProperty(t, 'value', {
+    get() {
+      return get.call(this)
+    },
+    set(newVal) {
+
+      const valueArray = newVal.split('\n')
+
+      let streetName, houseNumber, city, state, zip, streetAddress, address
+      valueArray.forEach(async (value) => {
+        const slug = value.split(': ').pop()
+        const header = value.substring(0, value.indexOf(":"))
+
+        switch (header) {
+          case 'Street name':
+            streetName = slug
+            break
+          case 'House number':
+            houseNumber = slug
+            streetAddress = slug + " " + streetName
+            document.getElementById('input_9_addr_line1').value = streetAddress
+            break
+          case 'City':
+            city = slug
+            document.getElementById('input_9_city').value = slug
+            break
+          case 'State':
+            state = slug
+            document.getElementById('input_9_state').value = slug
+            document.getElementById('input_69').value = slug
+            break
+          case 'Postal code':
+            zip = slug
+            address = `${houseNumber} ${streetName} ${city}, ${state} ${zip}`
+            document.getElementById('input_9_postal').value = slug
+            const county = await getAddress(address)
+            document.getElementById('input_68').value = county
+            break
+          default:
+            break
+        }
+      })
+      let result = set.call(this, newVal)
+      return result
+    }
+  })
+
+
+
+  const v = document.getElementById('input_78')
+  Object.defineProperty(v, 'value', {
+    get() {
+      return get.call(this)
+    },
+    set(newVal) {
+
+      const valueArray = newVal.split('\n')
+
+      let streetName, houseNumber, city, state, zip, streetAddress, address
+      valueArray.forEach(async (value) => {
+        const slug = value.split(': ').pop()
+        const header = value.substring(0, value.indexOf(":"))
+
+        switch (header) {
+          case 'Street name':
+            streetName = slug
+            break
+          case 'House number':
+            houseNumber = slug
+            streetAddress = slug + " " + streetName
+            document.getElementById('input_79_addr_line1').value = streetAddress
+            break
+          case 'City':
+            city = slug
+            document.getElementById('input_79_city').value = slug
+            break
+          case 'State':
+            state = slug
+            document.getElementById('input_79_state').value = slug
+            break
+          case 'Postal code':
+            zip = slug
+            address = `${houseNumber} ${streetName} ${city}, ${state} ${zip}`
+            document.getElementById('input_79_postal').value = slug
+            const county = await getAddress(address)
+            document.getElementById('input_77').value = county
+            break
+          default:
+            break
+        }
+      })
+      let result = set.call(this, newVal)
+      return result
+    }
+  })
+
+
+
+  const input_92 = document.getElementById('input_92')
+  Object.defineProperty(input_92, 'value', {
+    get() {
+      return get.call(this)
+    },
+    set(newVal) {
+
+      const valueArray = newVal.split('\n')
+
+      let streetName, houseNumber, city, state, zip, streetAddress, address
+      valueArray.forEach(async (value) => {
+        const slug = value.split(': ').pop()
+        const header = value.substring(0, value.indexOf(":"))
+
+        switch (header) {
+          case 'City':
+            city = slug
+            document.getElementById('input_91_city').value = slug
+            break
+          case 'State':
+            state = slug
+            document.getElementById('input_91_state').value = slug
+            break
+          default:
+            break
+        }
+      })
+      let result = set.call(this, newVal)
+      return result
+    }
+  })
+
+
+  const input_104 = document.getElementById('input_104')
+  Object.defineProperty(input_104, 'value', {
+    get() {
+      return get.call(this)
+    },
+    set(newVal) {
+
+      const valueArray = newVal.split('\n')
+
+      let streetName, houseNumber, city, state, zip, streetAddress, address
+      valueArray.forEach(async (value) => {
+        const slug = value.split(': ').pop()
+        const header = value.substring(0, value.indexOf(":"))
+
+        switch (header) {
+          case 'Street name':
+            streetName = slug
+            break
+          case 'House number':
+            houseNumber = slug
+            streetAddress = slug + " " + streetName
+            document.getElementById('input_105_addr_line1').value = streetAddress
+            break
+          case 'City':
+            city = slug
+            document.getElementById('input_105_city').value = slug
+            break
+          case 'State':
+            state = slug
+            document.getElementById('input_105_state').value = slug
+            break
+          default:
+            break
+        }
+      })
+      let result = set.call(this, newVal)
+      return result
+    }
+  })
+
+
+
+  const input_113 = document.getElementById('input_113')
+  Object.defineProperty(input_113, 'value', {
+    get() {
+      return get.call(this)
+    },
+    set(newVal) {
+
+      const valueArray = newVal.split('\n')
+
+      let streetName, houseNumber, city, state, zip, streetAddress, address
+      valueArray.forEach(async (value) => {
+        const slug = value.split(': ').pop()
+        const header = value.substring(0, value.indexOf(":"))
+
+        switch (header) {
+          case 'Street name':
+            streetName = slug
+            break
+          case 'House number':
+            houseNumber = slug
+            streetAddress = slug + " " + streetName
+            document.getElementById('input_114_addr_line1').value = streetAddress
+            break
+          case 'City':
+            city = slug
+            document.getElementById('input_114_city').value = slug
+            break
+          case 'State':
+            state = slug
+            document.getElementById('input_114_state').value = slug
+            break
+          default:
+            break
+        }
+      })
+      let result = set.call(this, newVal)
+      return result
+    }
+  })
+
+
+  const c = document.getElementById('input_117')
+  Object.defineProperty(c, 'value', {
+    get() {
+      return get.call(this)
+    },
+    set(newVal) {
+
+      const valueArray = newVal.split('\n')
+
+      let streetName, houseNumber, city, state, zip, streetAddress, address
+      valueArray.forEach(async (value) => {
+        const slug = value.split(': ').pop()
+        const header = value.substring(0, value.indexOf(":"))
+
+        switch (header) {
+          case 'Street name':
+            streetName = slug
+            break
+          case 'House number':
+            houseNumber = slug
+            streetAddress = slug + " " + streetName
+            document.getElementById('input_116_addr_line1').value = streetAddress
+            break
+          case 'City':
+            city = slug
+            document.getElementById('input_116_city').value = slug
+            break
+          case 'State':
+            state = slug
+            document.getElementById('input_116_state').value = slug
+            break
+          default:
+            break
+        }
+      })
+      let result = set.call(this, newVal)
+      return result
+    }
+  })
+
+</script>
+
+<script>
+  const getAddress = async (searchValue) => {
+    const URL =
+      'https://maps.googleapis.com/maps/api/geocode/json'
+
+    const params = {
+      address: searchValue,
+      key: 'AIzaSyB2dLOicHJgolKiUHivaqn3iR_qJgV8ark'
+    }
+
+    const response = await axios.get(URL, { params }, {
+      headers: {},
+    })
+
+    return response.data.results[0].address_components[4].long_name
+  }
+</script>
